@@ -1,0 +1,27 @@
+\documentclass{beamer}
+\usepackage{array}
+\usetheme{Berlin}
+\usecolortheme{seahorse}
+\usepackage[utf8]{inputenc}
+\usepackage{color,xcolor,german, graphicx, listings}
+\definecolor{lightblue}{RGB}{230, 230, 250}
+\setbeamerfont{frametitle}{size=\large}
+\setbeamercovered{transparent}
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{footline}[frame number]
+\useoutertheme[width=60pt,height=25pt,right]{sidebar} 
+\lstdefinestyle{custom}{
+  belowcaptionskip=1\baselineskip,
+  breaklines=true,
+  xleftmargin=\parindent,
+  language=Java,
+  showstringspaces=false,
+  basicstyle=\tiny\ttfamily,
+  keywordstyle=\tiny\bfseries\color{green!40!black},
+  commentstyle=\tiny\color{purple!40!black},
+  identifierstyle=\tiny\color{blue},
+  stringstyle=\tiny\color{orange},
+  backgroundcolor=\color{lightblue},
+  escapeinside={\%*}{*)}         
+}
+\lstset{style=custom}

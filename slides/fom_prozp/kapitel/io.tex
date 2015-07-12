@@ -1,0 +1,283 @@
+\section{I/O}
+\begin{frame}
+\frametitle{Ein- und Ausgabe mit Java-IO}
+	\huge Ein- und Ausgabe mit Java-IO
+\end{frame}
+
+\begin{frame}
+\frametitle{Ein- und Ausgabe mit Java-IO}
+	Die Ein- und Ausgabe wird in Java mit Streams gelöst.
+	\\ \vspace{0,3cm}
+	Dabei können als Datenquellen bzw. -Senken 
+	\begin{itemize}
+	  \item lokale Dateien (Quelle und Senke)
+	  \item Dateien im Internet (Quelle und Senke)
+	  \item der Bildschirm (Senke)
+	  \item oder auch die Tastatur (Quelle)
+	\end{itemize}
+	verwendet werden.
+\end{frame}
+
+\begin{frame}
+\frametitle{Ein- und Ausgabe mit Java-IO}
+	\begin{block}{Stream}
+	Ein Stream ist eine geordnete Folge von Bytes (Bytestrom).
+	\begin{itemize}
+	  \item Kommt der Stream aus einer Datenquelle heißt er ''InputStream''.
+	  \item Mündet er in einer Datensenke wird er ''OutputStream'' genannt.
+	  \item Streams sind im Package ''java.io'' zusammengefasst.
+	\end{itemize}
+	\end{block}
+	\center
+	\includegraphics[width=0.95\textwidth,
+	keepaspectratio=true]{bilder/streams.png}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Streams vs. Reader/Writer}
+	\begin{itemize}
+	  \item Streams arbeiten grundsätzlich byte-orientiert.
+	  \item Reader und Writer erweitern die Funktionalität von Streams und
+		ermöglichen eine zeichen-orientierte Verarbeitung
+	\end{itemize}
+\end{frame}
+
+\subsection{Input}
+\begin{frame}[fragile]
+	\frametitle{Input}
+	\huge Input
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Dateien als Datenquellen}
+	\begin{itemize}
+	  \item FileInputStream dient zum Einlesen von Dateien
+	  \item Arbeitet mit den Methoden der Klasse ''InputStream''
+	  \item read() liest ein byte, dass als int von 0 bis 255 zurückgeliefert wird
+	  \item read(byte[] b) liest je nach Arraygröße mehrere Bytes
+	  \item Nach Benutzung wird der Stream mit close() geschlossen um alle
+	  Ressourcen wieder freizugeben
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Dateien als Datenquellen}
+			\begin{lstlisting}
+				public static void main(String[] args) throws IOException {
+					// Deklarieren und initialisieren des Streams
+					FileInputStream fis = new FileInputStream("resource/TestDatei.txt");
+			
+					// Unsere Ausgabe
+					String ausgabe = "";
+			
+					// Solange ''r'' nicht -1 ist,
+					// ist noch ungelesener Inhalt in der Datei
+					byte[] b = new byte[1];
+					while (fis.read(b) != -1) {
+						// Aktuell gelesenes Byte der Ausgabe anhaengen
+						ausgabe += (char) (b[0]);
+					}
+					System.out.println(ausgabe);
+			
+					// Stream schliessen
+					fis.close();
+				}
+			\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Dateien als Datenquellen}
+	\begin{itemize}
+	  \item Reader arbeiten zeichenorientiert
+	  \item zusätzlich zu read() besitzen sie read(char[] b) 
+	  \item der BufferedReader enthält soger: readLine()
+	  \item readLine() liest die Datei Zeilenweise ein und gibt am Ende der Datei
+	  ''null'' zurück
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Dateien als Datenquellen}
+	\begin{itemize}
+	  \item Reader werden wie folgt instanziiert:\\
+	  \begin{lstlisting}
+	  	InputStreamReader isr = new InputStreamReader(new
+	  	FileInputStream("test.txt"));
+	  \end{lstlisting}
+	  \item Und der BufferedReader:
+	  \begin{lstlisting}
+	  	BufferedReader b = new BufferedReader(new InputStreamReader(new FileInputStream("test.txt")));
+	  \end{lstlisting}
+	  \item  Alternativ kann der Reader auch mit Hilfe der Klasse FileReader
+	  angelegt werden:
+	  \begin{lstlisting}
+		BufferedReader b = new BufferedReader(new FileReader("test.txt"));
+	  \end{lstlisting}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Dateien als Datenquellen}
+	\begin{lstlisting}
+		public static void main(String[] args) throws IOException {
+				// Deklarieren und initialisieren des Streams
+				FileInputStream fis = new FileInputStream("resource/TestDatei.txt");
+				
+				// Deklarieren und initialisieren des BufferedReaders
+				BufferedReader br = new BufferedReader(new InputStreamReader(fis));
+		
+				// Unsere Ausgabe
+				String ausgabe = "";
+		
+				// solange ''zeile'' nicht null ist
+				String zeile = null;
+				while ((zeile = br.readLine()) != null) {
+					// Aktuell gelesenes Byte der Ausgabe anhaengen
+					ausgabe += zeile;
+				}
+				System.out.println(ausgabe);
+		
+				// Stream schliessen
+				br.close();
+			}
+	\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Java Stanardeingabe}
+	Java stellt bestimmte Standard-Eingaben zur Verfügung.
+	\begin{itemize}
+	  \item Eingabe über statisches Attribut ''in'' der Klasse System
+	  \item ''in'' ist Referenz auf Objekt vom Typ ''InputStream''
+	  \item Zur Eingabe unter der Konsole
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Aufgaben}
+	\begin{enumerate}
+	  \item Die Datei ''stars.txt'' enthält 20 Zeilen und in jeder Zeile ist eine
+	  bestimmte Anzahl an * sowie Zahlen. Geben Sie die Anzahl der Sterne sowie die
+	  Summe der in der Datei enthaltenen Zahlen, je Zeile mit jeweiligen
+	  Zeilennummern, aus.
+	  \item Bisher verwendeten Sie die Klasse ''Tastatur'' zur Eingabe von
+	  Informationen auf der Konsole. Schreiben Sie diese Klasse selbst, mithilfe
+	  des Standard-Inputstreams ''System.in''. Ermöglichen Sie dabei das Lesen von
+	  Strings, Integer und Floats.
+	\end{enumerate}
+\end{frame}
+
+
+\subsection{Output}
+\begin{frame}[fragile]
+	\frametitle{Output}
+	\huge Output
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Dateien als Datensenken}
+	\begin{itemize}
+	  \item FileOutputStream dient zum Schreiben in Dateien
+	  \item Arbeitet mit den Methoden der Klasse ''OutputStream''
+	  \item write(int b) schreibt ein byte
+	  \item flush() schreibt gepufferte Daten
+	  \item Nach Benutzung wird der Stream mit close() geschlossen um alle
+	  Ressourcen wieder freizugeben
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Dateien als Datenksenken}
+		\begin{lstlisting}
+				public static void main(String[] args) throws IOException {
+					// Deklarieren und initialisieren des Streams
+					FileOutputStream fos = new FileOutputStream("resource/TestDatei.txt");
+					fos.write('H');
+					fos.write('e');
+					fos.write('l');
+					fos.write('l');
+					fos.write('o');
+			
+					// Puffer schreiben
+					fos.flush();
+			
+					// Schliessen des OutputStreams
+					fos.close();
+				}
+		\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Dateien als Datenksenken}
+	\begin{itemize}
+	  \item Writer arbeiten zeichenorientiert
+	  \item zusätzlich zu write() besitzen sie write(char[] b) und write(String s)
+	  \item der PrintWriter enthält soger: println()
+	  \item println() schreibt zeilenweise in die Datei
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Dateien als Datenksenken}
+	\begin{itemize}
+	  \item Writer werden wie folgt instanziiert:\\
+	  \begin{lstlisting}
+	  	OutputStreamWriter osw = new
+	  	OutputStreamWriter(new FileOutputStream("resource/TestDatei.txt"));
+	  \end{lstlisting}
+	  \item Und der PrintWriter:
+	  \begin{lstlisting}
+	  	PrintWriter pw = new PrintWriter(new OutputStreamWriter(
+				new FileOutputStream("resource/TestDatei.txt")));
+	  \end{lstlisting}
+	  \item  Alternativ kann der Writer auch mit Hilfe der Klasse FileWriter
+	  angelegt werden:
+	  \begin{lstlisting}
+		PrintWriter pw = new PrintWriter( new FileWriter("resource/TestDatei.txt"));
+	  \end{lstlisting}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Dateien als Datenksenken}
+	\begin{lstlisting}
+		public static void main(String[] args) throws IOException {
+			// Deklarieren und initialisieren des Streams
+			FileOutputStream fos = new FileOutputStream("resource/TestDatei.txt");
+	
+			// Deklarieren und initialisieren des Writers
+			PrintWriter pw = new PrintWriter(new OutputStreamWriter(fos));
+	
+			// Zeile schreiben
+			pw.println("Eine Testzeile.");
+	
+			// Puffer schreiben
+			pw.flush();
+	
+			// schliessen des Writers
+			pw.close();
+		}
+	\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Java Standardausgabe}
+	Java stellt bestimmte Standard-Ausgaben zur Verfügung.
+	\begin{itemize}
+	  \item Ausgabe über statisches Attribut ''out'' der Klasse System
+	  \item ''out'' ist Referenz auf Objekt vom Typ ''PrintStream''
+	  \item Zur Ausgabe auf die Konsole
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Aufgaben}
+	\begin{enumerate}
+	  \item Schreiben Sie die Ergebnisse der Verarbeitung der Datei
+	  ''stars.txt'' in die Datei ''starsgezaehlt.txt''. Schreiben sie dabei zu
+	  Beginn der Zeile die Zeilennummer, anschließend durch '','' getrennt die
+	  Anzahl der Sterne, sowie die Summe der Zahlen. Dahinter folgt der eigentliche
+	  Datei-Inhalt je Zeile.
+	\end{enumerate}
+\end{frame}

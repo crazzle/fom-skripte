@@ -1,0 +1,492 @@
+\section{Threads}
+\begin{frame}
+\frametitle{Parallele Programmierung mit Java-Threads}
+	\huge Parallele Programmierung mit Java-Threads
+\end{frame}
+
+\begin{frame}
+\frametitle{Threads}
+	\begin{exampleblock}{Definition eines Threads}
+		Ein Thread ist ein Programmstück, dass parallel zu anderen Programmstücken
+		ausgeführt wird.
+	\end{exampleblock}
+	Beispiele für parallel auszuführende Programmstücke sind
+	\begin{itemize}
+	  \item Benutzerinteraktionen
+	  \item komplexe Berechnungen
+	  \item \ldots
+	\end{itemize}
+	Auf Einprozessorsystemen werden Threads mittels Zeitscheiben und
+	möglichst häufigen Wechseln realisiert. (Nicht wirklich parallel)
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Erste Schritte}
+	\huge Threads erzeugen
+\end{frame}
+\begin{frame}
+\frametitle{Threads erzeugen}
+	\begin{itemize}
+	  \item Threads sind einfache Java-Klassen (java.lang.Thread)
+	  \item Können auf zwei Arten erzeugt werden:
+	  \begin{enumerate}
+	    \item Unterklasse (OOP)
+	    \item Runnable implementieren (OOP)
+	  \end{enumerate}
+	  \item In der Methode run() steht der parallel zu verarbeitende Code
+	  \item Gestartet wird der Thread durch start()
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Threads erzeugen durch ableiten von ''Thread''}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\small
+			\begin{itemize}
+			  \item MeinThread erbt von Thread (OOP)
+			  \item run() wird überschrieben (OOP)
+			  \item in Main-Methode wird start() aufgerufen, nicht run()
+			\end{itemize}
+			\normalsize
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			\begin{lstlisting}
+				public class MeinThread extends Thread {
+					public void run() {
+						System.out.println("MeinThread");
+					}
+				}
+				//...
+				public static void main(String[] args) throws IOException {
+					MeinThread t = new MeinThread();
+					t.start();
+				}
+			\end{lstlisting}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+
+\begin{frame}[fragile]
+	\frametitle{Threads erzeugen durch implementieren von ''Runnable''}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\small
+			\begin{itemize}
+			  \item MeinThreadRunner implementiert Runnable(OOP)
+			  \item run() wird überschrieben (OOP)
+			  \item In Main-Methode wird Instanz von Thread erzeugt (OOP) und das
+			  implementierte Runnable übergeben
+			  \item Anschließend wird start() auf den Thread aufgerufen, nicht run()
+			\end{itemize}
+			\normalsize
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			\begin{lstlisting}
+				public class MeinThreadRunner implements Runnable {
+					public void run() {
+						System.out.println("MeinThreadRunner");
+					}
+				}				
+				//...
+				public static void main(String[] args) throws IOException {
+					MeinThreadRunner runner = new MeinThreadRunner();
+					Thread t = new Thread(runner);
+					t.start();
+				}
+			\end{lstlisting}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Threads erzeugen}
+	\begin{itemize}
+	  \item Threads laufen unabhängig voneinander
+	  \item Gefahr bei gemeinsamen Ressourcen
+	  \item Main läuft in eigenem Thread
+	  \item Main-Thread wird von Laufzeitsystem erzeugt
+	  \item Programm terminiert wenn der letzte Thread terminiert
+	  \item Thread terminiert wenn die run()-Methode durchlaufen wurde
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Die Methode sleep(long millis)}
+	\begin{itemize}
+	  \item sleep() bewirkt, dass der aufrufende Thread für die übergebene Zeit
+	  schlafen gelegt wird
+	  \item schlafende Threads verbrauchen keine Rechenleistung
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Asynchrone Aufträge mit join()}
+	\begin{itemize}
+	  \item join()-Methode wird verwendet um auf Thread-Ende zu warten
+	  \item Beispiel: Aufgabenverteilung auf mehrere Threads und anschließendes
+	  Zusammenfügen der Ergebnisse
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Aufgaben}
+	\begin{enumerate}
+	  \item Zählen Sie in einem Array vom Typ ''boolean'' alle Felder deren Wert
+	  ''true'' ist. Verteilen Sie diese Aufgabe auf eine bestimmte Anzahl von
+	  Zähler-Threads.\\
+	  \begin{itemize}
+	    \item Das Array besitzt 200000000 Felder
+	    \item Jeder Thread zählt in einem bestimmten Bereich des Arrays
+	    \item Testen Sie die Anwendung ohne, mit 2, 10 und 100 Zähler-Threads
+	    \item Wie wirkt sich die Simulation einer komplexen Berechnung in Form von
+	    sleep() auf die ansynchrone Beauftragung aus?
+	  \end{itemize}
+	\end{enumerate}
+\end{frame}
+
+\subsection{Synchronisation}
+\begin{frame}[fragile]
+	\frametitle{Synchronisation und gegenseitiger Ausschluss}
+	\huge Synchronisation und gegenseitiger Ausschluss
+\end{frame}
+
+\begin{frame}
+\frametitle{Synchronisation}
+	\begin{itemize}
+		\item Das Schlüsselwort ''synchronized'' dient als Sperre für Ressourcen
+		\item Sperrt Blöcke indem bestimmtes Objekt gelocked wird (OOP)
+		\item Kann Zugriff auf alle Methoden eines Objekts locken \\
+		(locken der eigenen Instanz)
+		\item synchronized führt Informationen von einem konsistenten Zustand in einen
+		anderen konsistenten Zustand
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Beispiel für synchronize}
+	\begin{itemize}
+	  \item Gegeben sind zwei Threads: zaehler1 und zaehler2
+	  \item Beide Threads erhöhen den Wert eines gemeinsamen Integers
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Beispiel für synchronize}
+\begin{lstlisting}
+// Die run()-Methode unserer Runnable-Implementierung
+public void run() {
+	while (true) {
+		MainMitInt.inc();
+	}
+}
+// .....................................................
+public class MainMitInt {
+	// gemeinsamer Integer
+    static int zahl = 0;
+    //gemeinsam genutzte Methode
+	public static void inc(){
+		int neueZahl = zahl + 1;
+	    zahl = neueZahl;
+	}
+	// Main-Methode
+    public static void main(String[] args) {
+		// Zaehler-Runnable instanziieren
+		Thread zaehler1 = new Thread(new Zaehler());
+		Thread zaehler2 = new Thread(new Zaehler());
+
+		// Threads starten
+		zaehler1.start();
+		zaehler2.start();
+
+		// Ausgabe
+		while (true) {
+		    System.out.println(zahl);
+		}
+    }
+}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Beispiel für synchronize}
+	\begin{block}{Problemszenario bei dieser Implementierung:}
+	\small
+	\begin{enumerate}
+	  \item zaehler1 ruft inc() auf, berechnet neueZahl und lädt Ergebnis (z.B.
+	  5) in zahl
+	  \item zaehler1 wird suspendiert, zaehler2 wird ausgeführt, führt inc() aus
+	  und berechnet neueZahl (5 + 1 = 6)
+	  \item zaehler2 wird suspendiert, zaehler1 wird fortgesetzt, berechnet in inc()
+	  neueZahl (5 + 1 = 6) und schreibt 6 in Variable zahl
+	  \item zaehler1 wird suspendiert, zaehler2 wird fortgesetzt und schreibt in
+	  pausiertes inc() neueZahl(= 6) in Variable zahl
+	\end{enumerate}
+	\end{block}
+	\begin{alertblock}{Das Problem}
+	\small
+	Die gemeinsam genutzte Variable zahl ist weiterhin 6 obwohl sie 7
+	sein sollte!
+	\end{alertblock}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Anwendung von synchronize}
+	\begin{columns}
+		\begin{column}{0.7\textwidth}
+			\small
+			\begin{itemize}
+			  \item Gemeinsam genutze Variable darf immer nur von einem Thread
+			  gleichzeitig benutzt werden
+			  \item Sichergestellt durch synchronized im Methodenkopf
+			  \item Wird auch als ''Gegenseitiger Ausschluss'' bezeichnet
+			  \item Methode kann somit nur von einem Thread gleichzeitig aufgerufen
+			  werden
+			  \item Andere Threads werden blockiert bis aktueller Thread fertig ist
+			  \item Besitzt Objekt weitere synchronized-Methoden, so sind sie auch
+			  gelocked
+			\end{itemize}
+			\normalsize
+		\end{column}
+		\begin{column}{0.3\textwidth}
+			\begin{lstlisting}
+				// gemeinsam genutzte Methode
+				// versehen mit synchronized
+				public static synchronized void inc(){
+					int neueZahl = zahl + 1;
+				    zahl = neueZahl;
+				}
+			\end{lstlisting}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Wann synchronize verwenden?}
+	\begin{exampleblock}{Wann sollte synchronized verwendet werden:}
+	Synchronisation ist immer nur dann notwendig, wenn mehrere Threads auf
+	gemeinsame Daten zugreifen und mindestens einer dieser Threads die Daten
+	verändert. In diesem Fall ist es wichtig, alle Methoden, die auf die Daten
+	zugreifen, als synchronized zu kennzeichnen, gleichgültig, ob die Daten in
+	einer Methode nur gelesen oder auch geändert werden.
+	\end{exampleblock}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Aufgaben}
+	\begin{enumerate}
+	  \item Entwerfen Sie ein Bankkonto das Thread-Safe ist
+	  \begin{itemize}
+	    \item Das Konto besitzt die Methode buchen(int betrag)
+	    \item In der Methode wird der übergebene Betrag auf den aktuellen
+	    Kontostand aufaddiert
+	    \item Mehrere ''Einzahler'' können die Methode aufrufen und Geld einzahlen
+	  \end{itemize}
+	\end{enumerate}
+\end{frame}
+
+\subsection{Wait/Notify}
+\begin{frame}[fragile]
+	\frametitle{wait() und notify()}
+	\huge wait() und notify()
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Nebenbedingungen}
+	Bedingung fuer Ausführung einer Methode wird erweitert:
+	\begin{itemize}
+	  \item zusätzlich zu konsistenten Zustand
+	  \item wird auf Erfüllung von Nebenbedingung gewartet
+	  \item Thread soll mit Methodenausführung warten, bis diese Bedingungen
+	  erfüllt sind
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Beispielszenario: Parkhaus}
+	\begin{block}{Parkhaus das Anzahl noch freier Parkplätze managed:}
+	\begin{itemize}
+	  \item Verschiedene Threads können Parkhaus passieren() und verlassen()
+	  \item Bei Einfahrt wird Anzahl freier Plätze vermindert \\
+	  (0 wenn keiner mehr frei, Parkhaus voll, keine Einfahrt möglich)
+	  \item Bei Ausfahrt wird Anzahl freier Platze erhöht
+	  \item Da Parkhaus von mehreren Auto-Threads genutzt, und zustand geändert
+	  werden kann, müssen einfahren() und passieren() synchronized sein
+	\end{itemize}
+	\end{block}
+	\begin{alertblock}{Problem:}
+	Wie wird das Warten auf einen freien Platz gelöst?
+	\end{alertblock}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Wait-Notify zur Lösung des Problems}
+	Zur Lösung werden die Methoden wait() und notify() verwendet
+	\begin{itemize}
+	  \item wait() blockiert aufrufenden Thread und packt ihn in Warteschlange des
+	  Objekts auf das wait() aufgerufen wird
+	  \item wait() gibt locks auf Objekt frei
+	  \item notify() entfernt Thread aus der Warteschlange 
+	  \item notify() hat auf leere Warteschlange keine Wirkung
+	  \item keine Garantie das der Thread der am längsten wartet, geweckt wird
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Aufgaben}
+	\begin{enumerate}
+	  \item Implementieren Sie die Parkhaus-Simulation
+	  \begin{itemize}
+	    \item Entwerfen Sie die Klasse Parkhaus (OOP)
+	    \item Implementieren Sie die Methoden passieren() und verlassen()
+	    \item Implementieren Sie die Auto-Threads die nach und nach das Parkhaus
+	    verlassen und passieren
+	    \item Die Auto-Threads rufen dazu jeweils passieren() oder verlassen() auf
+	    dem Parkaus auf
+	  \end{itemize}
+	\end{enumerate}
+\end{frame}
+
+\subsection{Semaphoren}
+\begin{frame}[fragile]
+	\frametitle{Semaphoren}
+	\huge Semaphoren
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Semaphoren}
+	\begin{exampleblock}{Definition}
+	Eine Semaphore ist ein Verwaltungsobjekt, dass den Zugriff mehrerer
+	Threads/Prozesse auf eine gemeinsame Ressource kontrolliert.
+	\end{exampleblock}
+	\begin{itemize}
+	  \item Parkhaus entspricht der Struktur einer Semaphore
+	  \item Semaphoren dienen der Verwaltung beschränkter Ressourcen auf mehrere
+	  Prozesse
+	  \item Bei Verwendung besitzt jeder Thread die Semaphore als Attribut
+	  \item Verwendet für gegenseitigen Ausschluss
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Semaphore als Quelltext}
+	\begin{lstlisting}
+	public class Semaphore {
+	private int value = 0;
+	
+	// Konstruktor (OOP)
+	public Semaphore(int val){
+		if(val > 0){
+			value = val;
+		}
+	}
+	
+	// passieren() aus dem Parkhaus
+	public synchronized void p(){
+		while(value == 0){
+			try{
+				wait();
+			}catch(InterruptedException e){
+				// left blank
+			}
+		}
+		value--;
+	}
+	
+	// Verlassen aus dem Parkhaus
+	public synchronized void v(){
+		value++;
+		notify();
+	}
+}
+	\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Anwendung der Semaphore}
+	\begin{itemize}
+	  \item mit p() kann Thread kritischen Bereich betreten
+	  \item mit v() kann Thread kritischen Bereich verlassen
+	  \item value gibt an wie viele Threads maximal gleichzeitg den kritischen
+	  Bereich betreten dürfen
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Anwendungsbeispiel}
+	\begin{lstlisting}
+	// Semaphore die anderweitig bereits initialisiert wurde
+	Semaphore s;
+
+	// Unsere run-Methode
+	public void run() {
+		while (true) {
+			// Wir betreten einen kritischen Bereich
+			s.p();
+
+			this.doCriticalStuff();
+
+			// Wir verlassen den kritischen Bereich
+			s.v();
+		}
+	}
+	\end{lstlisting}
+\end{frame}
+
+\subsection{Deadlocks}
+\begin{frame}[fragile]
+	\frametitle{Deadlocks}
+	\huge Deadlocks
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Deadlocks}
+	Ein Deadlock ist eine Situation, in der sich zwei oder mehr Threads in
+	einem dauernden Wartezustand befinden.
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Situation}
+	Zwei Köche, benötigen Schüssel und Löffel zum Kochen
+	\begin{itemize}
+	  \item Koch 1 nimmt zuerst Löffel und dann Schüssel
+	  \item Koch 2 nimmt zuerst Schüssel und dann Löffel
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Szenario}
+	\begin{block}{Folgendes Szenario entsteht:}
+	\begin{enumerate}
+	  \item Koch 1 nimmt Löffel, Thread wird unterbrochen
+	  \item Koch 2 nimmt Schüssel, Thread wird unterbrochen
+	  \item Koch 1 wartet darauf das Schüssel frei wird
+	  \item Koch 2 wartet darauf das Löffel frei wird
+	\end{enumerate}
+	\end{block}
+	\begin{alertblock}{Das Problem:}
+	Deadlock!
+	\end{alertblock}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Die vier Bedingungen für Deadlocks}
+	\begin{enumerate}
+	  \item Wenn Ressource nur unter Ausschluss nutzbar
+	  \item Genutzte Ressourcen können nutzendem Thread nicht entzogen werden
+	  \item Threads besitzen Ressourcen und fordern weitere an
+	  \item Es existiert zyklische Kette von Threads, von denen jeder mindestens
+	  eine Ressource besitzt, die der nächste Thread in der Kette benötigt
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Vermeidung von Deadlocks}
+	\begin{itemize}
+	  \item Thread darf nur Ressourcen anfordern, wenn er keine Besitzt
+	  \item Thread forder Ressourcen in bestimmter Reihenfolge an um zyklische
+	  Abhängigkeiten zu verhindern
+	  \item Prüfung ob es bei Ressourcenanforderung zu einem Deadlock kommen kann
+	\end{itemize}
+\end{frame}
