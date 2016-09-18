@@ -2,3 +2,8 @@
 /prozp.pdf
 /prozp.synctex.gz
 /tmp
+.classpath
+.project
+.DS_Store
+.settings/
+.texlipse
