@@ -10,3 +10,8 @@
 /skript_oop.synctex.gz
 /tmp/
 skript_oop.pdf
+.classpath
+.project
+.DS_Store
+.settings/
+.texlipse
