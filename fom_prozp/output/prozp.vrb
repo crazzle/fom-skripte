@@ -1,0 +1,7 @@
+\frametitle{Vermeidung von Deadlocks}
+	\begin{itemize}
+	  \item Thread darf nur Ressourcen anfordern, wenn er keine Besitzt
+	  \item Thread forder Ressourcen in bestimmter Reihenfolge an um zyklische
+	  Abhängigkeiten zu verhindern
+	  \item Prüfung ob es bei Ressourcenanforderung zu einem Deadlock kommen kann
+	\end{itemize}

@@ -1,0 +1,23 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{Vorraussetzungen}{3}{0}{1}
+\beamer@sectionintoc {2}{Werkzeuge}{6}{0}{2}
+\beamer@subsectionintoc {2}{1}{Programmiersprache}{7}{0}{2}
+\beamer@subsectionintoc {2}{2}{Entwicklungsumgebung}{8}{0}{2}
+\beamer@subsectionintoc {2}{3}{Modellierung}{9}{0}{2}
+\beamer@sectionintoc {3}{OOP Grundlagen}{10}{0}{3}
+\beamer@subsectionintoc {3}{1}{Grundbegriffe}{12}{0}{3}
+\beamer@subsectionintoc {3}{2}{Grundprinzipien}{17}{0}{3}
+\beamer@sectionintoc {4}{OOP mit Java}{22}{0}{4}
+\beamer@subsectionintoc {4}{1}{Exkurs}{22}{0}{4}
+\beamer@subsectionintoc {4}{2}{Klassen und Objekte}{46}{0}{4}
+\beamer@subsectionintoc {4}{3}{Vererbung}{68}{0}{4}
+\beamer@subsectionintoc {4}{4}{Polymorphismus}{77}{0}{4}
+\beamer@subsectionintoc {4}{5}{Abstrakte Klassen}{84}{0}{4}
+\beamer@subsectionintoc {4}{6}{Interfaces}{87}{0}{4}
+\beamer@sectionintoc {5}{Entwurfsprinzipien}{93}{0}{5}
+\beamer@sectionintoc {6}{Mehr Java}{110}{0}{6}
+\beamer@subsectionintoc {6}{1}{Wrapper}{110}{0}{6}
+\beamer@subsectionintoc {6}{2}{Innere Klassen}{114}{0}{6}
+\beamer@subsectionintoc {6}{3}{Anonyme Klassen}{118}{0}{6}
+\beamer@subsectionintoc {6}{4}{Ausnahmen}{120}{0}{6}
+\beamer@subsectionintoc {6}{5}{GUIs und Grafik}{126}{0}{6}

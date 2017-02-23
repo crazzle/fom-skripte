@@ -1,0 +1,283 @@
+%\part{Einfuehrung}
+
+%----------------------------------------------------------------------------
+\section{Vorraussetzungen}
+\begin{frame}[fragile]
+	\frametitle{Vorraussetzungen}
+\huge Vorraussetzungen
+\end{frame}
+
+\begin{frame}
+\frametitle{Ihre Erwartungen an die Veranstaltung}
+	\begin{exampleblock}{Was m\"ochten Sie gerne behandeln?}
+		\begin{itemize}
+			 \item{}
+			 \item{}
+			 \item{}
+			 \item{}
+			 \item{}
+		\end{itemize}
+	\end{exampleblock}
+\end{frame}
+
+\begin{frame}
+\frametitle{Erwartungen an die Veranstaltung}
+	\begin{block}{Was sollten Sie am Ende k\"onnen?}
+		\begin{itemize}
+			 \item{Software Engineering als Teildisziplin der Informatik kennen}
+			 \item{Grundpfeiler des Software Engineering kennen}
+			 \item{Vorgehensmodelle der Softwareentwicklung beschreiben und abgrenzen}
+			 \item{Softwarequalität messen und bewerten}
+			 \item{Weiterf\"uhrende Konzepte verstehen und anwenden}
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+%----------------------------------------------------------------------------
+\section{Einführung}
+\begin{frame}[fragile]
+	\frametitle{Einführung}
+\huge Einführung
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{SW-Entwicklung im Studium}
+	\begin{columns}
+		\begin{column}{.5\textwidth}
+			Aufgabe: Rekursives Take
+			\newline\newline
+			Implementieren Sie die Methode take(int n) die
+			die ersten n Elemente eines Übergebenen Arrays
+			vom Typ int als neues Array zurückgibt.
+		\end{column}
+		\begin{column}{.5\textwidth}
+			\center\includegraphics[width=1\textwidth,
+			keepaspectratio=true]{bilder/student.png}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Die Realität}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\small
+			\begin{itemize}
+				\item Anforderungen mehrere 100 Seiten lang
+				\item Anforderungen unklar, widersprüchlich, flexibel
+				\item International verteilte Teams
+				\item Mehrere tausend Nutzer in 5 Ländern
+				\item Unterstützung von Chrome, Firefox, IE 6
+				\item 6 Monate Projektlaufzeit, 500.000 LOC
+			\end{itemize}
+			\normalsize
+		\end{column}
+		\begin{column}{.5\textwidth}
+			\center\includegraphics[width=1\textwidth,
+			keepaspectratio=true]{bilder/student_traurig.png}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Die Realität}
+	Standish Group (http://www.standishgroup.com) veröffentlicht
+	jährlich ``Chaos Report''.
+	\newline\newline
+	\begin{block}{Chaos Report 2015}
+		\begin{itemize}
+			\item 19\% der betrachteten IT-Projekte scheitern
+			\item 52\% der betrachteten IT-Projekte drohen zu scheitern
+			\item 29\% der betrachteten IT-Projekte sind erfolgreich
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Softwarekatastrophe ARIANE 5}
+	\begin{quote}
+		On June 4, 1996, on its maiden flight, the Ariane-5 was launched
+		and performed perfectly for approximately 40 seconds. Then it began
+		to veer off course. At the direction of the Ariane ground controller,
+		the rocket was destroyed by remote control. \ldots total cost of the
+		disaster was 500 million dollar.
+	\end{quote}
+	\begin{itemize}
+		\item Flugbahn wird durch ``Inertial Reference System (SRI)'' gemessen,
+		dessen Software teilweise von Ariane-4 übernommen wurde.
+		\item Andere Flugbahndaten erzeugten Überlauf bei
+		Konvertierung von 64-Bit Floating Point in 16-Bit Integer
+		und verursachten Fehlfunktion des SRI-Systems.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Softwarekatastrophe Heartbleed}
+	\begin{itemize}
+		\item Heartbeat hält TLS-Verbindung am Leben
+		\item Eine Seite schickt beliebig langen Payload, Gegenseite schickt die
+		gleichen Daten wieder zurück
+		\item Indikator für aufrechte Verbindung
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Softwarekatastrophe Heartbleed}
+	\center\includegraphics[width=1\textwidth,
+	keepaspectratio=true]{bilder/heartbleed1.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Softwarekatastrophe Heartbleed}
+	\begin{itemize}
+		\item Prüfung ob Payload der angegebenen Länge entspricht fehlte
+		\item War der Payload kürzer als angegeben wurden Daten aus den darauffolgenden
+		Speicherbereichen kopiert
+		\item Da OpenSSL eine eigenen Speicherverwaltung implementiert waren diese Daten
+		auch aus dem OpenSSL Kontext
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Softwarekatastrophe Heartbleed}
+	\center\includegraphics[width=1\textwidth,
+	keepaspectratio=true]{bilder/heartbleed2.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Softwarekrise}
+	SW-Entwicklung in den 40er und 50er Jahren
+	\small
+	\begin{itemize}
+		\item Teure Hardware
+		\item Low-Level Programmierung (Assembler, fast kein OS)
+		\item Von Experten bedient (Entwickler = Nutzer)
+		\item numerisch-naturwissenschaftliche Probleme
+	  \item Codierung bekannter, mathematisch fundierter Algorithmen
+	  \item Viele Daten, einfache Algorithmen
+		\item Häufig Batch-Systeme
+		\item Fokus auf Effizienz
+		\item Häufig ``Wegwerf-Software''
+	\end{itemize}
+	\normalsize
+\end{frame}
+
+\begin{frame}
+\frametitle{Softwarekrise}
+	SW-Entwicklung in den 60er Jahren bis heute
+	\small
+	\begin{itemize}
+		\item Preiswerte Hardware mit viel Leistung
+		\item Embedded Hardware die günstig ist und häufig eingesetzt wird
+		\item Nicht-Informatiker
+		\item Vielzahl von Anwendungsbereichen
+	  \item Kritische Anwendungsbereiche wie Finanzsektor etc.
+	  \item Systeme sind komplex und interaktiv
+		\item Software teurer als Hardware
+		\item Lange Lebensdauer
+	\end{itemize}
+	\normalsize
+\end{frame}
+
+\begin{frame}
+\frametitle{Softwarekrise}
+	\begin{block}{Softwarekrise}
+		\begin{itemize}
+			 \item Programme werden immer komplexer
+			 \item Passende Programmiersprachen, Methoden, Werkzeuge fehlen
+		\end{itemize}
+	\end{block}
+	\begin{alertblock}{Folgen}
+		\begin{itemize}
+			 \item Kosten für Software steigen
+			 \item Softwareprojekte scheitern
+		\end{itemize}
+	\end{alertblock}
+	\begin{exampleblock}{Lösungsansatz}
+		SW-Entwicklung als Ingenieurstätigkeit mit definiertem Vorgehen
+		statt künstlerischer Tätigkeit
+	\end{exampleblock}
+\end{frame}
+
+\begin{frame}
+\frametitle{Softwarekrise}
+	\begin{block}{Djikstra (The Humble Programmer)}
+		\begin{quote}
+			Als es noch keine Rechner gab, war auch das Programmieren noch kein
+			Problem, als es ein paar leistungsschwache Rechner gab, war das
+			Programmieren ein kleines Problem und nun, wo wir gigantische Rechner
+			haben, ist das Programmieren zu einem gigantischen Problem geworden.
+			In diesem Sinne hat die elektronische Industrie kein einziges Problem
+			gelöst, sondern nur neue geschaffen. Sie hat das Problem geschaffen,
+			ihre Produkte zu nutzen.
+		\end{quote}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Was ist Software}
+	\begin{block}{IEEE Definition}
+		Software ist eine Sammlung von Computerprogrammen, Prozeduren, Regeln,
+		zugehöriger Dokumentation und Daten
+		\begin{itemize}
+			 \item Programme sind eine Teilmenge von Software
+			 \item SW beeinhaltet Dokumente die verschiedene Abstraktionsschichten
+			 für verschiedene Zielgruppen beschreiben
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Probleme bei der Softwareentwicklung}
+	\begin{itemize}
+		 \item Kommunikationsprobleme mit Anwender
+		 \item SW ist immateriell
+		 \item SW ist leicht modifizierbar, Behebung von Fehlern wird unterschätzt
+		 \item SW ist nur beobachtbar
+		 \item Anforderungen ändern sich regelmäßig
+		 \item SW altert ohne zu Verschleißen,
+		 das führt zu immer neuen Erweiterungen und wachsender Komplexität
+		 \item Verhalten für Software lässt sich nur schwer beweisen
+		 \item \ldots
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Was ist Software Engineering}
+	\begin{block}{IEEE Definition}
+		Software Engineering der systematische Ansatz für
+		\begin{itemize}
+			\item die Entwicklung,
+			\item den Betrieb
+			\item sowie die Wartung
+		\end{itemize}
+		von Software.
+	\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Ziele des Software Engineerings}
+	Effiziente Entwicklung von messbar qualitativ hochwertiger Software
+	\small
+	\begin{itemize}
+		\item Korrektheit und Zuverlässigkeit
+		\item Robustheit
+		\item Effizienz
+		\item Benutzerfreundlichkeit
+		\item Wartbarkeit und Wiederverwendbarkeit
+	\end{itemize}
+	\normalsize
+	\newline\newline
+	Qualitätsfaktoren
+	\small
+	\begin{itemize}
+		\item Extern (für den Benutzer sichtbar)
+		\item Intern (nur für den Entwickler sichtbar)
+	\end{itemize}
+	\normalsize
+\end{frame}
+
+\begin{frame}
+\frametitle{Software Engineering als ganzheitlicher Prozess}
+
+\end{frame}

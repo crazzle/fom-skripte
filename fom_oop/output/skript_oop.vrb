@@ -1,0 +1,33 @@
+\frametitle{GUI}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\small
+			\center
+			\includegraphics[width=0.8\textwidth,
+			keepaspectratio=true]{bilder/layouts.png}
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			\begin{lstlisting}
+				// 1. Borderlayout fuer das Fenster
+				BorderLayout border = new BorderLayout();
+				this.getContentPane().setLayout(border);
+
+				// Panel
+				JPanel p = new JPanel();
+
+				// 2. Layout fuer das JPanel
+				p.setLayout(new FlowLayout());
+
+				// Button fuer das Panel
+				JButton button = new JButton("Button1");
+				JButton button2 = new JButton("Button2");
+				JButton button3 = new JButton("Button3");
+				p.add(button);
+				p.add(button2);
+				p.add(button3);
+
+				// Panel der Contentpane hinzufuegen
+				this.getContentPane().add(p, BorderLayout.CENTER);
+			\end{lstlisting}
+		\end{column}
+	\end{columns}
