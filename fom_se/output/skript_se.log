@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.28)  26 FEB 2017 18:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.28)  26 FEB 2017 22:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1422,14 +1422,14 @@ Package pdftex.def Info: FOMLogo.pdf used on input line 298.
 ]
 File: FOMLogo.pdf Graphic file (type pdf)
  <use FOMLogo.pdf>
-Package pdftex.def Info: FOMLogo.pdf used on input line 311.
+Package pdftex.def Info: FOMLogo.pdf used on input line 319.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
  [25
 
 ]
 File: FOMLogo.pdf Graphic file (type pdf)
  <use FOMLogo.pdf>
-Package pdftex.def Info: FOMLogo.pdf used on input line 327.
+Package pdftex.def Info: FOMLogo.pdf used on input line 335.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
  [26
 
@@ -1437,7 +1437,7 @@ Package pdftex.def Info: FOMLogo.pdf used on input line 327.
 File: FOMLogo.pdf Graphic file (type pdf)
 
 <use FOMLogo.pdf>
-Package pdftex.def Info: FOMLogo.pdf used on input line 343.
+Package pdftex.def Info: FOMLogo.pdf used on input line 351.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
  [27
 
@@ -1446,12 +1446,12 @@ Package pdftex.def Info: FOMLogo.pdf used on input line 343.
 File: bilder/kommunikationsbedarf.png Graphic file (type png)
 
 <use bilder/kommunikationsbedarf.png>
-Package pdftex.def Info: bilder/kommunikationsbedarf.png used on input line 349
+Package pdftex.def Info: bilder/kommunikationsbedarf.png used on input line 357
 .
 (pdftex.def)             Requested size: 275.74263pt x 149.32202pt.
 File: FOMLogo.pdf Graphic file (type pdf)
  <use FOMLogo.pdf>
-Package pdftex.def Info: FOMLogo.pdf used on input line 349.
+Package pdftex.def Info: FOMLogo.pdf used on input line 357.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
  [28
 
@@ -1460,11 +1460,11 @@ Package pdftex.def Info: FOMLogo.pdf used on input line 349.
 File: bilder/projektaufwand.png Graphic file (type png)
 
 <use bilder/projektaufwand.png>
-Package pdftex.def Info: bilder/projektaufwand.png used on input line 355.
+Package pdftex.def Info: bilder/projektaufwand.png used on input line 363.
 (pdftex.def)             Requested size: 275.74263pt x 114.56763pt.
 File: FOMLogo.pdf Graphic file (type pdf)
  <use FOMLogo.pdf>
-Package pdftex.def Info: FOMLogo.pdf used on input line 355.
+Package pdftex.def Info: FOMLogo.pdf used on input line 363.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
  [29
 
@@ -1473,32 +1473,32 @@ Package pdftex.def Info: FOMLogo.pdf used on input line 355.
 File: bilder/anteil_aufwand.png Graphic file (type png)
 
 <use bilder/anteil_aufwand.png>
-Package pdftex.def Info: bilder/anteil_aufwand.png used on input line 361.
+Package pdftex.def Info: bilder/anteil_aufwand.png used on input line 369.
 (pdftex.def)             Requested size: 275.74263pt x 150.55676pt.
 File: FOMLogo.pdf Graphic file (type pdf)
  <use FOMLogo.pdf>
-Package pdftex.def Info: FOMLogo.pdf used on input line 361.
+Package pdftex.def Info: FOMLogo.pdf used on input line 369.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
  [30
 
  <./bilder/anteil_aufwand.png>]
 File: FOMLogo.pdf Graphic file (type pdf)
  <use FOMLogo.pdf>
-Package pdftex.def Info: FOMLogo.pdf used on input line 370.
+Package pdftex.def Info: FOMLogo.pdf used on input line 378.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
  [31
 
 ]
 File: FOMLogo.pdf Graphic file (type pdf)
  <use FOMLogo.pdf>
-Package pdftex.def Info: FOMLogo.pdf used on input line 379.
+Package pdftex.def Info: FOMLogo.pdf used on input line 387.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
  [32
 
 ]
 File: FOMLogo.pdf Graphic file (type pdf)
  <use FOMLogo.pdf>
-Package pdftex.def Info: FOMLogo.pdf used on input line 399.
+Package pdftex.def Info: FOMLogo.pdf used on input line 407.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
  [33
 
@@ -1506,7 +1506,7 @@ Package pdftex.def Info: FOMLogo.pdf used on input line 399.
 File: FOMLogo.pdf Graphic file (type pdf)
 
 <use FOMLogo.pdf>
-Package pdftex.def Info: FOMLogo.pdf used on input line 417.
+Package pdftex.def Info: FOMLogo.pdf used on input line 425.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
  [34
 
@@ -1523,52 +1523,38 @@ Package pdftex.def Info: FOMLogo.pdf used on input line 5.
  [35
 
 ]
-\openout4 = `skript_se.vrb'.
-
-
-(/Users/markkeinhorster/git/lectures/fom_se/output/skript_se.vrb)
 File: FOMLogo.pdf Graphic file (type pdf)
-
-<use FOMLogo.pdf>
-Package pdftex.def Info: FOMLogo.pdf used on input line 11.
+ <use FOMLogo.pdf>
+Package pdftex.def Info: FOMLogo.pdf used on input line 17.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
  [36
 
 ]
-\openout4 = `skript_se.vrb'.
-
-
-(/Users/markkeinhorster/git/lectures/fom_se/output/skript_se.vrb)
 File: FOMLogo.pdf Graphic file (type pdf)
-
-<use FOMLogo.pdf>
-Package pdftex.def Info: FOMLogo.pdf used on input line 17.
+ <use FOMLogo.pdf>
+Package pdftex.def Info: FOMLogo.pdf used on input line 32.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
  [37
 
-]) (./kapitel/projektmanagement.tex
-\openout4 = `skript_se.vrb'.
-
-
-(/Users/markkeinhorster/git/lectures/fom_se/output/skript_se.vrb)
+]
 File: FOMLogo.pdf Graphic file (type pdf)
 
 <use FOMLogo.pdf>
-Package pdftex.def Info: FOMLogo.pdf used on input line 8.
+Package pdftex.def Info: FOMLogo.pdf used on input line 41.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
  [38
 
 ]
 File: FOMLogo.pdf Graphic file (type pdf)
  <use FOMLogo.pdf>
-Package pdftex.def Info: FOMLogo.pdf used on input line 14.
+Package pdftex.def Info: FOMLogo.pdf used on input line 51.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
  [39
 
 ]
 File: FOMLogo.pdf Graphic file (type pdf)
  <use FOMLogo.pdf>
-Package pdftex.def Info: FOMLogo.pdf used on input line 20.
+Package pdftex.def Info: FOMLogo.pdf used on input line 57.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
  [40
 
@@ -1576,9 +1562,49 @@ Package pdftex.def Info: FOMLogo.pdf used on input line 20.
 File: FOMLogo.pdf Graphic file (type pdf)
 
 <use FOMLogo.pdf>
-Package pdftex.def Info: FOMLogo.pdf used on input line 26.
+Package pdftex.def Info: FOMLogo.pdf used on input line 63.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
  [41
+
+]
+File: FOMLogo.pdf Graphic file (type pdf)
+ <use FOMLogo.pdf>
+Package pdftex.def Info: FOMLogo.pdf used on input line 69.
+(pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
+ [42
+
+]) (./kapitel/projektmanagement.tex
+\openout4 = `skript_se.vrb'.
+
+(/Users/markkeinhorster/git/lectures/fom_se/output/skript_se.vrb)
+File: FOMLogo.pdf Graphic file (type pdf)
+
+<use FOMLogo.pdf>
+Package pdftex.def Info: FOMLogo.pdf used on input line 8.
+(pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
+ [43
+
+]
+File: FOMLogo.pdf Graphic file (type pdf)
+ <use FOMLogo.pdf>
+Package pdftex.def Info: FOMLogo.pdf used on input line 14.
+(pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
+ [44
+
+]
+File: FOMLogo.pdf Graphic file (type pdf)
+ <use FOMLogo.pdf>
+Package pdftex.def Info: FOMLogo.pdf used on input line 20.
+(pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
+ [45
+
+]
+File: FOMLogo.pdf Graphic file (type pdf)
+
+<use FOMLogo.pdf>
+Package pdftex.def Info: FOMLogo.pdf used on input line 26.
+(pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
+ [46
 
 ]) (./kapitel/requirements_engineering.tex
 \openout4 = `skript_se.vrb'.
@@ -1590,7 +1616,7 @@ File: FOMLogo.pdf Graphic file (type pdf)
 <use FOMLogo.pdf>
 Package pdftex.def Info: FOMLogo.pdf used on input line 8.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
- [42
+ [47
 
 ]) (./kapitel/sw_architektur.tex
 \openout4 = `skript_se.vrb'.
@@ -1602,7 +1628,7 @@ File: FOMLogo.pdf Graphic file (type pdf)
 <use FOMLogo.pdf>
 Package pdftex.def Info: FOMLogo.pdf used on input line 8.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
- [43
+ [48
 
 ]) (./kapitel/konfigurationsmanagement.tex
 \openout4 = `skript_se.vrb'.
@@ -1614,7 +1640,7 @@ File: FOMLogo.pdf Graphic file (type pdf)
 <use FOMLogo.pdf>
 Package pdftex.def Info: FOMLogo.pdf used on input line 8.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
- [44
+ [49
 
 ])
 \tf@nav=\write6
@@ -1642,23 +1668,38 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 24.
  ) 
 Here is how much of TeX's memory you used:
- 18858 strings out of 493089
- 356015 string characters out of 6134842
+ 18902 strings out of 493089
+ 356826 string characters out of 6134842
  444098 words of memory out of 5000000
- 21741 multiletter control sequences out of 15000+600000
+ 21773 multiletter control sequences out of 15000+600000
  11970 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,21n,66p,475b,605s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
-></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><
-/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></u
-sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb>
+pdfTeX warning (dest): name{Outline0.4.3.44} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.4.2.43} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.4.1.42} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.3.2.40} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.3.1.39} has been referenced but does not e
+xist, replaced by a fixed one
+
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr
+/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb>
 Output written on /Users/markkeinhorster/git/lectures/fom_se/output/skript_se.p
-df (44 pages, 977375 bytes).
+df (49 pages, 985560 bytes).
 PDF statistics:
- 944 PDF objects out of 1000 (max. 8388607)
- 862 compressed objects within 9 object streams
- 101 named destinations out of 1000 (max. 500000)
+ 1046 PDF objects out of 1200 (max. 8388607)
+ 958 compressed objects within 10 object streams
+ 117 named destinations out of 1000 (max. 500000)
  179 words of extra memory for PDF output out of 10000 (max. 10000000)
 
