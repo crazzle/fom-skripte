@@ -153,8 +153,8 @@
 		\item Low-Level Programmierung (Assembler, fast kein OS)
 		\item Von Experten bedient (Entwickler = Nutzer)
 		\item numerisch-naturwissenschaftliche Probleme
-	  \item Codierung bekannter, mathematisch fundierter Algorithmen
-	  \item Viele Daten, einfache Algorithmen
+	  	\item Codierung bekannter, mathematisch fundierter Algorithmen
+	 	\item Viele Daten, einfache Algorithmen
 		\item Häufig Batch-Systeme
 		\item Fokus auf Effizienz
 		\item Häufig ``Wegwerf-Software''
@@ -169,10 +169,10 @@
 	\begin{itemize}
 		\item Preiswerte Hardware mit viel Leistung
 		\item Embedded Hardware die günstig ist und häufig eingesetzt wird
-		\item Nicht-Informatiker
+		\item Nicht-Informatiker nutzen die Software
 		\item Vielzahl von Anwendungsbereichen
-	  \item Kritische Anwendungsbereiche wie Finanzsektor etc.
-	  \item Systeme sind komplex und interaktiv
+	  	\item Kritische Anwendungsbereiche wie Finanzsektor etc.
+	  	\item Systeme sind komplex und interaktiv
 		\item Software teurer als Hardware
 		\item Lange Lebensdauer
 	\end{itemize}
@@ -235,7 +235,7 @@
 		 \item SW ist leicht modifizierbar, Behebung von Fehlern wird unterschätzt
 		 \item SW ist nur beobachtbar
 		 \item Anforderungen ändern sich regelmäßig
-		 \item SW altert ohne zu Verschleißen,
+		 \item SW altert über Umgebung ohne zu Verschleißen,
 		 das führt zu immer neuen Erweiterungen und wachsender Komplexität
 		 \item Verhalten für Software lässt sich nur schwer beweisen
 		 \item \ldots
@@ -243,15 +243,35 @@
 \end{frame}
 
 \begin{frame}
+\frametitle{Software Engineering}
+	\begin{itemize}
+		\item Auslöser für Begriff ``Software Engineering'' war Softwarekrise von 1968
+		\item Begriff ``Software Engineering'' wurde 1967 von F.L. Bauer (ehemaliger Prof. in München) 
+		im Rahmen einer ``Study Group on Computer Science'' der NATO geprägt.
+		\item Software wurde erstmals als Industrieprodukt bezeichnet
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
 \frametitle{Was ist Software Engineering}
-	\begin{block}{IEEE Definition}
-		Software Engineering der systematische Ansatz für
+	\begin{block}{Definition IEEE}
+		Software Engineering ist der systematische Ansatz für
 		\begin{itemize}
 			\item die Entwicklung,
 			\item den Betrieb
 			\item sowie die Wartung
 		\end{itemize}
 		von Software.
+	\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Was ist Software Engineering}
+	\begin{block}{Definition Lehrbuch Software-Technick (Balzert) }
+		Zielorientierte Bereitstellung und systematische Verwendung von Prinzipien, Methoden, Konzepten, 
+		Notationen und Werkzeugen für die arbeitsteilige, ingenieurmäßige Entwicklung und Anwendung von 
+		umfangreichen Software-Systemen. Zielorientiert bedeutet die Berücksichtigung z.B. von Kosten, 
+		Zeit, Qualität.
 	\end{block}
 \end{frame}
 
@@ -267,7 +287,6 @@
 		\item Wartbarkeit und Wiederverwendbarkeit
 	\end{itemize}
 	\normalsize
-	\newline\newline
 	Qualitätsfaktoren
 	\small
 	\begin{itemize}
@@ -275,9 +294,124 @@
 		\item Intern (nur für den Entwickler sichtbar)
 	\end{itemize}
 	\normalsize
+	\normalsize
 \end{frame}
 
 \begin{frame}
-\frametitle{Software Engineering als ganzheitlicher Prozess}
+\frametitle{Software Engineering als Prozess}
+Der systematische Ansatz im Software Engineering wird auch als
+Entwicklungsprozess bezeichnet. Er beeinhaltet eine Reihe von Aktivitäten
+die zur Entwicklung von Software führen.
+\begin{itemize}
+	\item Software spezifizieren
+	\item Software entwickeln
+	\item Software validieren
+	\item Software weiterentwickeln
+\end{itemize}
+\end{frame}
 
+\begin{frame}
+\frametitle{Kleine Softwareprojekte}
+	\begin{itemize}
+		\item Wenige LOC
+		\item SW für die eigene Verwendung
+		\item Produkt spezifiziert sich selbst
+		\item Lösung wird direkt entwickelt
+		\item Validierung und Korrekturen am Endprodukt
+		\item 1 Entwickler
+		\item Komplexität gering
+		\item Software besteht aus wenigen Komponenten
+		\item Wenig bis keine Dokumentation nötig
+		\item Keine Planung und Projektstruktur nötig
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Große Softwareprojekte}
+	\begin{itemize}
+		\item Viele LOC
+		\item SW für die Verwendung durch Dritte
+		\item Klares Ziel, genaue Spezifikation erforderlich
+		\item Lösung wird in Phasen entwickelt
+		\item Tests in jeder Phase sind unerlässlich
+		\item Produkt wird im Team entwickelt
+		\item Hohe Komplexität macht Strukturierung der SW erforderlich
+		\item Software besteht aus vielen Komponenten
+		\item Dokumentation für den wirtschaftlichen Betrieb der SW erfoderlich
+		\item Projektstruktur zwingend erforderlich
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Wachstum des Kommunikationsbedarfs}
+	\center\includegraphics[width=1\textwidth,
+	keepaspectratio=true]{bilder/kommunikationsbedarf.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Wachstum des Aufwands}
+	\center\includegraphics[width=1\textwidth,
+	keepaspectratio=true]{bilder/projektaufwand.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Aufwände aufgeschlüsselt}
+	\center\includegraphics[width=1\textwidth,
+	keepaspectratio=true]{bilder/anteil_aufwand.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Übung 1.1}
+	Eine Person braucht zum Bau einer 2m langen Bruecke 0,5 Tage. Wie lange brauchen 100 Leute für den Bau einer 2km langen Brücke?
+	\begin{enumerate}
+		\item Interpolieren Sie den Aufwand linear
+		\item Warum ist die Berechnung aus Punkt 1 eine Milchmädchenrechnung?
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\frametitle{Übung 1.1 - Lösung}
+	Eine Person braucht zum Bau einer 2m langen Bruecke 0,5 Tage. Wie lange brauchen 100 Leute für den Bau einer 2km langen Brücke?
+	\begin{enumerate}
+		\item Aufwand = (2000m / 2m * 0.5PT) / 100 Personen = 5 Tage
+		\item Mehr Kommunikation, Projekt deutlich Komplexer, Ressourcenbeschaffung, Logistik ...
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\frametitle{Übung 1.2}
+	\scriptsize
+	Eine Kundenbetreuerin im Firmenkundengeschäft einer Bank hat auf Grundlage eines 
+	Tabellenkalkulationsprogramms eine kleine persönliche Anwendung geschrieben, 
+	die sie bei der Überprüfung der Kredite der von ihr betreuten Firmen unterstützt. 
+	Die notwendigen Daten gibt sie jeweils von Hand ein. Der Abteilungsleiter sieht 
+	diese Anwendung zufällig, ist davon angetan und beschließt, sie allen Kundenbetreuerinnen 
+	und -betreuer zur Verfügung stellen. Die notwendigen Daten sollen jetzt automatisch aus 
+	den Datenbanken der Bank übernommen werden. Die Kundenbetreuerin gibt an, für die Entwicklung 
+	ihrer Anwendung insgesamt etwa vier Arbeitstage aufgewendet zu haben. Der Abteilungsleiter 
+	veranschlagt daher für die Übernahme und die gewünschten Änderungen einen Aufwand von einer 
+	Arbeitswoche. Als die geänderte Anwendung endlich zur Zufriedenheit aller Beteiligten läuft, 
+	sind jedoch rund acht Arbeitswochen Aufwand investiert. Der Abteilungsleiter erzählt die 
+	Geschichte einem befreundeten Berater als Beispiel, dass Informatikprojekte nie ihre Termine 
+	einhalten. Darauf meint der Berater trocken, der investierte Aufwand sei völlig realistisch 
+	und normal. Begründen Sie warum.
+	\normalsize
+\end{frame}
+
+\begin{frame}
+\frametitle{Übung 1.2 - Lösung}
+	\scriptsize
+	\begin{itemize}
+		\item Die Kundenbetreuerin hat das Fachkonzept ihrer Tabellenkalkulationsanwendung vermutlich 
+		schon vor den angegebenen vier Tagen Bearbeitungszeit im Kopf gehabt. Die Fremdentwickler 
+		müssen dieses zumindest erst nachvollziehen.
+		\item Die neue Anwendung ist durch die Datenbankanbindung mit den entsprechenden Schnittstellen 
+		und Zugriffsrechteproblematiken deutlich komplexer.
+		\item Der Kommunikationsaufwand schon allein von Kundenseite (viele Berater = viele unterschiedliche 
+		Meinungen) ist erheblich
+		\item Die neu entstandene ``professionelle'' Anwendung hat einen erheblich höheren Aufwand für 
+		die Validierung als eine eigengenutzte Entwicklung.
+		\item An die Bedienbarkeit (Nutzerschnittstelle) werden bei einer ``professionellen'' Anwendung 
+		erheblich höhere Ansprüche gestellt.
+	\end{itemize}
 \end{frame}

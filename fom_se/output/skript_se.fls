@@ -408,6 +408,14 @@ INPUT FOMLogo.pdf
 INPUT ./FOMLogo.pdf
 INPUT FOMLogo.pdf
 INPUT ./FOMLogo.pdf
+INPUT FOMLogo.pdf
+INPUT ./FOMLogo.pdf
+INPUT FOMLogo.pdf
+INPUT ./FOMLogo.pdf
+INPUT FOMLogo.pdf
+INPUT ./FOMLogo.pdf
+INPUT FOMLogo.pdf
+INPUT ./FOMLogo.pdf
 INPUT kapitel/vorgehensmodelle.tex
 INPUT kapitel/vorgehensmodelle.tex
 OUTPUT ./output/skript_se.vrb
