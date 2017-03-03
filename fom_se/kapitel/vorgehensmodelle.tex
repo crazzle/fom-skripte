@@ -12,7 +12,6 @@
 			\item Beispielsweise der Softwareentwicklungsprozess
 			\item Um Operationen auf Daten auszuführen
 		\end{itemize}
-		von Software.
 	\end{block}	
 \end{frame}
 
@@ -23,10 +22,10 @@
 		Der Prozess beeinhaltet
 		\begin{itemize}
 			\item das Übersetzen der Bedürfnisse in konkrete Anforderungen,
-			\item die Überführen der Anforderungen in einen Entwurf,
+			\item das Überführen der Anforderungen in einen Entwurf,
 			\item die Implementierung des Entwurfs in Quelltext,
 			\item das Testen des Quelltextes,
-			\item die Installation und den Betrieg der implementierten Software.
+			\item die Installation und den Betrieb der implementierten Software.
 		\end{itemize}
 	\end{block}	
 \end{frame}
@@ -57,11 +56,12 @@
 	Beispiele für unterschiedliche Softwareprozesse
 	\begin{enumerate}
 		\item Planungsgetriebene Prozesse
-		\begin{itemize}
+		\begin{enumerate}
+			\scriptsize
 			\item Sequenziell
 			\item Nebenläufig
 			\item Inkrementell
-		\end{itemize}
+		\end{enumerate}
 		\item Agile Prozesse
 		\item \ldots
 	\end{enumerate}
@@ -72,7 +72,7 @@
 		\item Teamstruktur
 		\item Planbarkeit des Softwareprodukts
 		\item Time-2-Market
-		\item Art der Software die Entwickelt wird
+		\item Art der Software die entwickelt wird
 		\item Kundentyp
 		\item \ldots
 	\end{enumerate}
@@ -105,7 +105,7 @@
 	Prozess = Gegenstand des Modells
 		\begin{itemize}
 			\item Tatsächlich ausgeführte Abfolge von Schritten
-			\item Jeder Schritt produziert konkretes Ergebniss
+			\item Jeder Schritt produziert ein konkretes Ergebnis
 			\item Ist das Projekt
 		\end{itemize}
 \end{frame}
@@ -206,42 +206,445 @@
 
 \begin{frame}
 \frametitle{Code and Fix}
-	
+	Codierung und Bugfixing finden im Wechsel mit Tests statt
+	\begin{itemize}
+		\item ohne Analyse
+		\item ohne Spezifikation
+		\item ohne Entwurf
+	\end{itemize}
+	\bigskip
+	Vorteile
+	\begin{itemize}
+		\item Schnelle Resultate
+		\item Einfacher Ablauf
+		\item Kein Aufwand für Dokumentation und Kommunikation
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Code and Fix}
+	Nachteile
+	\begin{itemize}
+		\item Schlechte Planbarkeit des Projekts
+		\item Arbeit schwer auf mehrere Personen zu verteilen
+		\item Es fehlen die Anforderungen da nicht erhoben
+		\item Programmstruktur leided durch häufge Nachbesserung
+		\item Oft fehlende Dokumentation
+		\item Hoher Wartungs- und Pflegeaufwand
+		\item Wissen liegt in den Köpfen der Entwickler
+	\end{itemize}
+	\bigskip
+	Um die Nachteile zu umgehen werden zusätzliche Aktivitäten benötigt
+	\center\includegraphics[width=1\textwidth,
+		keepaspectratio=true]{bilder/se_phasen.png}
 \end{frame}
 
 \begin{frame}
 \frametitle{Sequenzielles Modell}
-	
+	\begin{itemize}
+		\item Softwareentwicklung wird in Aktivitäten (Phasen) gegliedert
+		\item Aktivitäten werden sequenziell durchlaufen
+		\item Nachfolgeaktivtät kann erst dann starten, wenn der Vorgänger vollständig 
+		abgeschlossen ist
+	\end{itemize}
+	\center\includegraphics[width=1\textwidth,
+		keepaspectratio=true]{bilder/sequenzielles_model.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Sequenzielles Modell}
+	Vorteile
+	\begin{itemize}
+		\item leicht verständlich
+		\item geringer Managementaufwand
+	\end{itemize}
+	\bigskip
+	Nachteile
+	\begin{itemize}
+		\item Gesamtdauer = Summe aller Aktivitäten
+		\item Fehlende Rückkopplung zwischen den Aktivitäten
+		\item Wird ein Problem in Folgeaktivität erkannt 
+		muss von vorn begonnen werden
+		\item Lauffähiges Produkt erst am Ende des Projekts
+	\end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{Wasserfallmodell als bekanntestes sequentielles Modell}
-	
+	\begin{itemize}
+		\item Sequenzielles Modell mit Rückkopplung
+		\item Jede Aktivität wird vollständig ausgeführt
+		\item Am Ende jeder Aktivität steht ein Dokumentation
+		(Dokumentengetriebenes Modell)
+		\item Benutzer nur in der Analyse beteiligt
+	\end{itemize}
+	\center\includegraphics[width=1\textwidth,
+		keepaspectratio=true]{bilder/wasserfall_model.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Wasserfallmodell als bekanntestes sequentielles Modell}
+	Vorteile
+	\begin{itemize}
+		\item leicht verständlich
+		\item geringer Managementaufwand
+		\item Aktivitäten gut dokumentiert
+	\end{itemize}
+	\bigskip
+	Nachteile
+	\begin{itemize}
+		\item Es ist nicht immer sinnvoll alle Aktivitäten vollständig auszuführen
+		\item Team ist an die Reihenfolge gebunden
+		\item Die Dokumentation kann wichtiger werden als das eigentliche System
+		\item Es kann nicht flexibel auf Risikofaktoren reagiert werden
+		\item Lauffähiges Produkt erst am Ende des Projekts
+	\end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{Nebenläufiges Modell}
-	
+	\begin{itemize}
+		\item Durch Überlappungen und Rückkopplungen 
+		soll die Gesamtzeit reduziert werden
+		\item Nachfolger beginnen sobald Vorgänger die ersten
+		Informationen bereitgestellt haben
+		\item Die Teams arbeiten parallel
+		\item Nachfolger müssen auf neue Informationen der Vorgänger reagieren
+	\end{itemize}
+	\center\includegraphics[width=1\textwidth,
+		keepaspectratio=true]{bilder/nebenlaufiges_model.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Nebenläufiges Modell}
+	Vorteile
+	\begin{itemize}
+		\item Gute Ausnutzung der Zeit
+		\item Frühzeitige Rückmeldung möglich
+	\end{itemize}
+	\bigskip
+	Nachteile
+	\begin{itemize}
+		\item Wichtige Entscheidungen können zu spät getroffen werden
+		\item Hoher Planungs- und Personalaufwand
+		\item Gefahr dass Nachfolger mit unzureichenden Informationen beginnen 
+		\item Es kann nicht flexibel auf Risikofaktoren reagiert werden
+		\item Kommunikation zwischen den Teams muss aufrecht erhalten werden
+	\end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{Inkrementelles Modell}
-	
+	Sequenzielle Modelle
+	\begin{itemize}
+		\item Bisher wurde in einem Rutsch ein vollständiges Produkt entwickelt
+		\item Es wurden vor der Implementierung alle Anforderungen im Detail erarbeitet
+		\item Der Kunde ist nur zu Beginn involviert
+		\item Es kann mitunter lange dauern bis der Kunde das Produkt nutzen kann
+	\end{itemize}
+	\bigskip
+	Problem
+	\begin{itemize}
+		\item Zu Beginn sind oftmals nicht alle Anforderungen vorhanden
+		\item Der Kunde sollte bereits früh Feedback geben ob das Produkt in seinem 
+		Sinne entwickelt wurde
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Inkrementelles Modell}
+	\begin{itemize}
+		\item Anforderungen werden vollständig erfasst und modelliert
+		\item Produkt wird in Ausbaustufen zerlegt
+		\item Jede Ausbaustufe realisiert einen Teil der Funktionalität
+		\item Kunde bekommt sehr früh eine erste Version
+		\item Erfahrungen fließen in die Folgeversionen mit ein
+		\item Jede Version kann in eigenem Projekt entwickelt werden
+	\end{itemize}
+	\center\includegraphics[width=1\textwidth,
+		keepaspectratio=true]{bilder/inkrementelles_model.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Inkrementelles Modell}
+	Vorteile
+	\begin{itemize}
+		\item Kunde erhält früh und in kurzen Abständen produktionsreife Software
+		\item Nicht-Funktionale Anforderungen werden frühzeitig berücksichtigt
+		\item Durch vollständige Anforderungen kann die Applikation von 
+		Beginn an gut strukturiert werden
+	\end{itemize}
+	\bigskip
+	Nachteile
+	\begin{itemize}
+		\item Vollständige Anforderungen zu Beginn führen zu einer relativ späten 
+		Auslieferung von Version 0
+		\item Modell kann nur verwendet werden, wenn Anforderungen vollständig erfasst
+		sind	
+	\end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{Evolutionäres Modell}
-	
+	\begin{itemize}
+		\item Einsatz wenn zu Beginn nicht alle Anforderungen erfasst werden können
+		\item Es wird mit Kernanforderungen des Kunden angefangen
+		\item Auf dieser Basis wird der Produktkern entwickelt
+		\item Kunde kann früh die erste Version einsetzen
+		\item Aus den Erfahrungen leitet der Kunde weitere Anforderungen ab
+		\item Neue Anforderungen werden in der nächsten Version implementiert
+		\item Zyklus aus praktischer Erprobung und Erweiterung + Verbesserung
+		\item Software wird in Evolutionsstufen entwickelt
+		\item Grundlage der agilen Prozessmodelle
+	\end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{Prototypen}
-	
+\frametitle{Evolutionäres Modell}
+	Vorteile
+	\begin{itemize}
+		\item Anforderungen müssen zu Beginn nicht vollständig vorliegen
+		\item Kunde kann sehr früh die erste Version einsetzen und bewerten
+		\item Erfahrungen aus Produktiveinsatz können in nächste Version einfließen
+		\item Durch kurze Entwicklungszyklen kann kurzzeitig auf Änderugen reagiert werden
+	\end{itemize}
+	\bigskip
+	Nachteile
+	\begin{itemize}
+		\item Gefahr dass bei Folgeversionen die gesamte Architektur überarbeitet werden muss
+		\item Es besteht die Gefahr dass ``evolutionär'' nur ein Vorwand für mangelhafte 
+		Spezifikation ist
+	\end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{Pilotsystem}
-	
+\frametitle{Übung 2.2}
+	Wann würden Sie evolutionäre Modelle anwenden und wann sequenzielle?
+\end{frame}
+
+\begin{frame}
+\frametitle{Anwendung evolutionärer Modelle}
+	\begin{itemize}
+		\item Bei Projekten mit offenen Fragen (bzgl. Technologie, Domäne, \ldots)
+		\item Bei Projekten mit unklaren oder sich ändernden Anforderungen
+		\item Bei sehr komplexen Projekten
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Übung 2.3}
+	Entwickeln Sie eine Applikation. Für Analyse, Entwurf und Entwicklung benötigen 
+	Sie jeweils 2 Monate. Sie führen eine nebenläufige Entwicklung durch. Dabei wird
+	jeweils 75\% der Vorgängerpahse überlappt. Aufgrund des Kommunikations- und 
+	Änderungsaufwands verlängern sich die Phasen Entwurf und Entwicklung um jeweils 20\%.
+	Wie viel Zeit sparen Sie durch die Nebenläufige Entwicklung ein?
+\end{frame}
+
+\ifloesung
+\begin{frame}
+\frametitle{Übung 2.3 - Lösung}
+	Sequenziell = 2M A + 2M E + 2M C = 6 Monate
+	\newline
+	Nebenläufig = 2M A + 2.4M E (Start 0.5) + 2.4M C (Start 1) = ca. 3.5 Monate	
+\end{frame}
+\fi
+
+\begin{frame}
+\frametitle{Übung 2.4}
+	Sie arbeiten nun nach dem inkrementellen Vorgehensmodell. Die Analyse benötigt 2 Monate. Sie
+	entwicklen 2 inkremente (V1 und V2). Für jedes Inkrement benötigen Entwurf und Entwicklung jeweils 
+	1 Monat. Wie viel Zeit wird benötigt um V1, V2 sowie die finale Applikation fertig zu stellen?
+	Wo liegt der Vorteil im Vergleich zur sequenziellen Entwicklung?
+\end{frame}
+
+\ifloesung
+\begin{frame}
+\frametitle{Übung 2.4 - Lösung}
+	V1 = 2M A + 1M E + 1M C = 4 Monate
+	\newline
+	V2 = 1M E + 1M C = 2 Monate
+	\newline
+	V3 = V1 + V2 = 6 Monate
+	\newline\newline
+	Vorteile
+	\begin{itemize}
+		\item Kunde kann Applikation bereits nach 4 Monaten nutzen
+		\item Inkremente können jeweils in eigenen Projekten realisiert werden
+		\item \ldots
+	\end{itemize}
+\end{frame}
+\fi
+
+\begin{frame}
+\frametitle{Übung 2.5}
+	Entwickeln Sie eine Applikation nun nach dem evolutionären Vorgehensmodell. Für Analyse, 
+	Entwurf und Entwicklung benötigen Sie jeweils 1 Monat. Sie entwickeln 2 Versionen (V1 und V2).
+	Wie lange dauert die Entwicklungszeit für V1 und V2 sowie für das ganze Produkt?
+	Wo liegt der Vorteil im Vergleich zur sequenziellen Entwicklung?
+\end{frame}
+
+\ifloesung
+\begin{frame}[fragile]
+\frametitle{Übung 2.5 - Lösung}
+	V1 = 1M A + 1M E + 1M C = 3 Monate
+	\newline
+	V2 = 1M A + 1M E + 1M C = 3 Monate
+	\newline
+	V3 = V1 + V2 = 6 Monate
+	\newline\newline
+	Vorteile
+	\begin{itemize}
+		\item Kunde kann Applikation bereits nach 3 Monaten nutzen
+		\item Architektur und Code ist auf die Problemstellung abgestimmt
+		\item \ldots
+	\end{itemize}
+\end{frame}
+\fi
+
+\begin{frame}
+\frametitle{Prototyping Modell}
+	\begin{itemize}
+		\item Entwicklung einer Anfangsimplementierung
+		\item Benutzer geben zu dieser (konkreten) Implementierung Feedback
+		\item Äußerungen der Benutzer werden in neuer Version des Systems berücksichtigt
+		\item Die Schritte 2 – 3 werden solange durchgeführt bis ein angemessenes System entstanden ist
+	\end{itemize}
+	\begin{block}{Prototyp}
+		Provisorisches Softwaresystem (Modell), das erstellt wird, 
+		um Anforderungen zu klären oder zu veranschaulichen.
+	\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Prototyping Modell}
+	\begin{block}{Prototyping}
+		Folge von Prototypen, die bestimmte Systemfunktionen oder -aspekte
+		frühzeitig realisieren oder vortäuschen, so dass der Benutzer:
+		\begin{itemize}
+			\item den gewünschten Eindruck erhält
+			\item sich mit dem Prototyp auseinandersetzen kann.
+		\end{itemize}
+	\end{block}
+	\begin{block}{Rapid Prototyping}
+		Art von Prototyping bei dem der Fokus auf der Entwicklung 
+		von Prototypen zu Beginn des Softwareprozesses an liegt, 
+		um so möglichst von Anfang an Feedback vom Nutzer einzuholen. 
+	\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Prototyping Modell - Arten von Prototypen}
+	Prototypen haben die folgene Verwendung:
+	\begin{itemize}
+		\item Klärung von Anforderungen oder Entwicklungsproblemen
+		\item Durchführung von Experimenten und Sammlung von Erfahrungen
+	\end{itemize}
+	\bigskip
+	Dabei wird zwischen verschiedenen Arten von Prototypen unterschieden.
+\end{frame}
+
+\begin{frame}
+\frametitle{Prototyping Modell - Arten von Prototypen}
+	Demonstrationsprototyp
+	\begin{itemize}
+		\item Dient der Auftragsakquisition
+		\item Auftraggeber bekommt ersten Eindruck vom Produkt
+		\item Schnelle Entwicklung in frühem Stadium des Entwicklungsprozesses
+		\item Auf Standards und Best Practices bei der Entwicklung wird verzichtet
+		\item Wegwerfprodukt
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Prototyping Modell - Arten von Prototypen}
+	Funktionaler Prototyp
+	\begin{itemize}
+		\item Unterstützt die Anforderungsanalyse
+		\item Modelliert Ausschnitte der Bedienoberfläche und/oder Teile der Funktionalität
+		\item Kann in Architektur bereits dem Zielsystem entsprechen
+		\item Dient dem Nachweis der technischen Machbarkeit
+		\item Auch für Benutzerfeedback hinsichtlich Software-Ergonomie
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Prototyping Modell - Arten von Prototypen}
+	Labormuster
+	\begin{itemize}
+		\item Modelliert technische Aspekte des Zielsystems
+		\item Experimentiersystem für Entwickler
+		\item Für Machbarkeitsstudien
+		\item In der Regel sind Endnutzer nicht an der Evaluation beteiligt
+	\end{itemize}
+	\bigskip
+	Pilotsystem
+	\begin{itemize}
+		\item Realisiert einen abgeschlossenen Bereich des Zielsystems
+		\item Funktionalität und Qualität reichen mindestens für vorübergehenden 
+		Produktiveinsatz
+		\item Wird Schrittweise erweitert
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Prototyping Modell - Arten von Prototypen}
+	Ein Softwaresystem besteht in der Regel aus verschiedenen Komponenten/Schichten.
+	Aus diesem Grund lassen sich Prototypen auch in horizontale oder vertikale 
+	Prototypen unterscheiden.
+	\begin{itemize}
+		\item Horizontale Prototypen realisieren nur eine Schicht des Systems
+		(beispielsweise Nutzeroberfläche oder Datenbankschicht)
+		\item Vertikale Prototypen implementieren einen funktionalen Teilbereich 
+		durch alle Schichten hindurch (End-2-End)
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Prototyping Modell - Arten von Prototypen}
+	\center\includegraphics[width=1\textwidth,
+			keepaspectratio=true]{bilder/prototypen.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Prototyping Modell - Prozess}
+	\center\includegraphics[width=1\textwidth,
+			keepaspectratio=true]{bilder/prototyp_entwicklung.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Prototyping Modell - Anwendbarkeit}
+	\begin{itemize}
+		\item Für sehr interaktive Systeme
+		\item Für kleine/mittlere oder Teile großer Systeme
+		\item Für Systeme mit kurzer Lebensdauer
+		\item Für Systeme, die schlecht vorab planbar sind
+	\end{itemize}
+	\bigskip
+	Prototyping wird selten als alleinstehendes Vorgehensmodell verwendet.
+	Vielmehr findet es im Rahmen anderer Vorgehensmodelle statt.
+\end{frame}
+
+\begin{frame}
+\frametitle{Übung 2.6}
+	Welche Vor- und Nachteile hat die Verwendung von Prototypen?
+\end{frame}
+
+\begin{frame}
+\frametitle{Prototyping Modell}
+	Vorteile
+	\begin{itemize}
+		\item Reduziert das Entwicklungsrisiko
+		\item Missverständnisse in den Anforderungen fallen frühzeitig auf
+		\item Fehlende Anforderungen werden identifiziert wodurch die Planung optimiert wird
+		\item Fördert die Kreativität
+	\end{itemize}
+	\bigskip
+	Nachteile
+	\begin{itemize}
+		\item Die enstehenden Applikationen sind oftmals schlechter strukturiert
+		\item Wegwerf-Prototypen werden of nachträglich als evolutionär entwickeltes System deklariert 
+		und produktiv eingesetzt
+	\end{itemize}
 \end{frame}
 
 \begin{frame}
@@ -322,4 +725,9 @@
 \begin{frame}
 \frametitle{Kanban}
 	
+\end{frame}
+
+\begin{frame}
+\frametitle{Übung 2.X}
+	Wann sollten sequenzielle und wann inkrementelle Modelle eingesetzt werden?
 \end{frame}
