@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2017.2.27)  20 MAR 2017 07:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2017.2.27)  20 MAR 2017 17:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2080,14 +2080,14 @@ Package pdftex.def Info: FOMLogo.pdf used on input line 745.
 File: FOMLogo.pdf Graphic file (type pdf)
 
 <use FOMLogo.pdf>
-Package pdftex.def Info: FOMLogo.pdf used on input line 751.
+Package pdftex.def Info: FOMLogo.pdf used on input line 761.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
  [89
 
 ]
 File: FOMLogo.pdf Graphic file (type pdf)
  <use FOMLogo.pdf>
-Package pdftex.def Info: FOMLogo.pdf used on input line 759.
+Package pdftex.def Info: FOMLogo.pdf used on input line 769.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
  [90
 
@@ -2099,21 +2099,21 @@ Package pdftex.def Info: FOMLogo.pdf used on input line 759.
 File: FOMLogo.pdf Graphic file (type pdf)
 
 <use FOMLogo.pdf>
-Package pdftex.def Info: FOMLogo.pdf used on input line 765.
+Package pdftex.def Info: FOMLogo.pdf used on input line 783.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
  [91
 
 ]
 File: FOMLogo.pdf Graphic file (type pdf)
  <use FOMLogo.pdf>
-Package pdftex.def Info: FOMLogo.pdf used on input line 772.
+Package pdftex.def Info: FOMLogo.pdf used on input line 790.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
  [92
 
 ]
 File: FOMLogo.pdf Graphic file (type pdf)
  <use FOMLogo.pdf>
-Package pdftex.def Info: FOMLogo.pdf used on input line 781.
+Package pdftex.def Info: FOMLogo.pdf used on input line 799.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
  [93
 
@@ -2121,41 +2121,41 @@ Package pdftex.def Info: FOMLogo.pdf used on input line 781.
 File: FOMLogo.pdf Graphic file (type pdf)
 
 <use FOMLogo.pdf>
-Package pdftex.def Info: FOMLogo.pdf used on input line 799.
+Package pdftex.def Info: FOMLogo.pdf used on input line 817.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
  [94
 
 ]
-<bilder/prozessmodell.png, id=1941, 882.29625pt x 449.68pt>
+<bilder/prozessmodell.png, id=1940, 882.29625pt x 449.68pt>
 File: bilder/prozessmodell.png Graphic file (type png)
 
 <use bilder/prozessmodell.png>
-Package pdftex.def Info: bilder/prozessmodell.png used on input line 805.
+Package pdftex.def Info: bilder/prozessmodell.png used on input line 823.
 (pdftex.def)             Requested size: 275.74263pt x 140.53838pt.
 File: FOMLogo.pdf Graphic file (type pdf)
  <use FOMLogo.pdf>
-Package pdftex.def Info: FOMLogo.pdf used on input line 805.
+Package pdftex.def Info: FOMLogo.pdf used on input line 823.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
  [95
 
  <./bilder/prozessmodell.png>]
 File: FOMLogo.pdf Graphic file (type pdf)
  <use FOMLogo.pdf>
-Package pdftex.def Info: FOMLogo.pdf used on input line 810.
+Package pdftex.def Info: FOMLogo.pdf used on input line 828.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
  [96
 
 ]
 File: FOMLogo.pdf Graphic file (type pdf)
  <use FOMLogo.pdf>
-Package pdftex.def Info: FOMLogo.pdf used on input line 816.
+Package pdftex.def Info: FOMLogo.pdf used on input line 834.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
  [97
 
 ]
 File: FOMLogo.pdf Graphic file (type pdf)
  <use FOMLogo.pdf>
-Package pdftex.def Info: FOMLogo.pdf used on input line 821.
+Package pdftex.def Info: FOMLogo.pdf used on input line 839.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
  [98
 
@@ -2163,21 +2163,21 @@ Package pdftex.def Info: FOMLogo.pdf used on input line 821.
 File: FOMLogo.pdf Graphic file (type pdf)
 
 <use FOMLogo.pdf>
-Package pdftex.def Info: FOMLogo.pdf used on input line 826.
+Package pdftex.def Info: FOMLogo.pdf used on input line 844.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
  [99
 
 ]
 File: FOMLogo.pdf Graphic file (type pdf)
  <use FOMLogo.pdf>
-Package pdftex.def Info: FOMLogo.pdf used on input line 831.
+Package pdftex.def Info: FOMLogo.pdf used on input line 849.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
  [100
 
 ]
 File: FOMLogo.pdf Graphic file (type pdf)
  <use FOMLogo.pdf>
-Package pdftex.def Info: FOMLogo.pdf used on input line 836.
+Package pdftex.def Info: FOMLogo.pdf used on input line 854.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
  [101
 
@@ -2278,41 +2278,23 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 27.
  ) 
 Here is how much of TeX's memory you used:
- 19436 strings out of 493027
- 364347 string characters out of 6134069
- 448617 words of memory out of 5000000
- 22227 multiletter control sequences out of 15000+600000
+ 19428 strings out of 493027
+ 364238 string characters out of 6134069
+ 448618 words of memory out of 5000000
+ 22225 multiletter control sequences out of 15000+600000
  11970 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,21n,66p,475b,605s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Navigation109} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.4.3.106} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.4.2.105} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.4.1.104} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.3.3.98} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.3.2.88} has been referenced but does not e
-xist, replaced by a fixed one
-
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><
-/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></u
-sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr
-/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb>
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb>
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb>
 Output written on /Users/markkeinhorster/git/lectures/fom_se/output/skript_se.p
-df (108 pages, 3421674 bytes).
+df (108 pages, 3422336 bytes).
 PDF statistics:
- 2285 PDF objects out of 2487 (max. 8388607)
- 2108 compressed objects within 22 object streams
- 236 named destinations out of 1000 (max. 500000)
+ 2278 PDF objects out of 2487 (max. 8388607)
+ 2101 compressed objects within 22 object streams
+ 230 named destinations out of 1000 (max. 500000)
  232 words of extra memory for PDF output out of 10000 (max. 10000000)
 
