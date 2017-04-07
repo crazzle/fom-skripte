@@ -4,11 +4,8 @@
 \beamer@sectionintoc {3}{Vorgehensmodelle}{35}{0}{3}
 \beamer@subsectionintoc {3}{1}{Basismodelle}{46}{0}{3}
 \beamer@subsectionintoc {3}{2}{Monumentale Prozessmodelle}{92}{0}{3}
-\beamer@subsectionintoc {3}{3}{Agile Prozessmodelle}{97}{0}{3}
-\beamer@sectionintoc {4}{Projektmanagement}{102}{0}{4}
-\beamer@subsectionintoc {4}{1}{Projektplanung}{103}{0}{4}
-\beamer@subsectionintoc {4}{2}{Qualitaetssicherung}{104}{0}{4}
-\beamer@subsectionintoc {4}{3}{Messen/Bewerten}{105}{0}{4}
-\beamer@sectionintoc {5}{Requirements Engineering}{106}{0}{5}
-\beamer@sectionintoc {6}{SW Architektur}{107}{0}{6}
-\beamer@sectionintoc {7}{Konfigurations - Management}{108}{0}{7}
+\beamer@subsectionintoc {3}{3}{Agile Prozessmodelle}{106}{0}{3}
+\beamer@sectionintoc {4}{Projektmanagement}{127}{0}{4}
+\beamer@subsectionintoc {4}{1}{Risikomanagement}{132}{0}{4}
+\beamer@subsectionintoc {4}{2}{Qualitaetssicherung}{137}{0}{4}
+\beamer@subsectionintoc {4}{3}{Messen/Bewerten}{138}{0}{4}
