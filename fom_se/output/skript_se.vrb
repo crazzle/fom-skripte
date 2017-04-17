@@ -1,2 +1,18 @@
-\frametitle{Projektmanagement}
-\huge Projektmanagement
+\frametitle{Übung 2.8 - Lösung}
+	Sicht des Projektleiters
+	\begin{itemize}
+		\item Fortschritte werden nicht korrekt Kommuniziert / Fehlende Transparenz
+		\item Komplexität einzelner Arbeitspakete für Nicht-Entwickler schwer
+		bewertbar
+		\item Fehlender Fokus der Entwickler
+		\item Projektressourcen werden abgezogen
+		\item \ldots
+	\end{itemize}
+	\bigskip
+	Sicht des Mitarbeiter
+	\begin{itemize}
+		\item PM bringt zu wenig technisches Wissen mit
+		\item Auswirkungen von ad-hoc Änderungen werden vom Management oft
+		unterschätzt / PM hat kein Durchsetzungsvermögen
+		\item \ldots
+	\end{itemize}
