@@ -1,5 +1,3 @@
-% \part{Java}
-
 % ----------------------------------------------------------------------------
 \section{Projektmanagement}
 \begin{frame}[fragile]
@@ -44,13 +42,13 @@
 
 \begin{frame}
 \frametitle{Fundamentale PM Aktivitäten}
-	\begin{itemize}
+	\begin{enumerate}
 		\item Projektplanung
 		\item Risikomanagement
 		\item Personalführung
 		\item Berichterstattung
 		\item Projektierung
-	\end{itemize}
+	\end{enumerate}
 \end{frame}
 
 \subsection{Risikomanagement}
@@ -82,8 +80,18 @@
 
 \begin{frame}
 \frametitle{Identifikation von Risiken}
+	Eine Risikoeinordnung kann sein
 	\begin{itemize}
-		\item Es kann zwischen Kernrisiken und projektspezifischen Risiken unterschieden werden.
+		\item Projektrisiken die den Projektplan oder -ressourcen beeinflussen
+		\item Produktrisiken die Qualität oder Effizienz der Applikation mindern
+		\item Geschäftsrisiken den zugrundeliegenden Business Plan der Applikation beeinflussen
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Identifikation von Risiken}
+	\begin{itemize}
+		\item Es kann auch zwischen Kernrisiken und projektspezifischen Risiken unterschieden werden.
 		\item Projektspezifischre Risiken können beispielsweise im Rahmen eines moderierten
 		Workshops erhoben werden
 	\end{itemize}
@@ -100,23 +108,493 @@
 \frametitle{Übung 3.1 - Lösung}
 	\begin{itemize}
 		\item Unklare bzw. sich laufend ändernde Projektziele und Anforderungen
-		\item Nicht korrekter vorbereiteter Zeitplan
+					die grundlegende Änderungen am Quellcode erfordern
+		\item Unkorrekter Zeitpland, z.B. die
+					Dauer der Testphase wurde unterschätzt oder gar unterschlagen
 		\item Mitarbeiterfluktuation im Projektteam
 		\item Mangelnde Skills der Mitarbeiter
 		\item Fehlende Unterstützung im Management
-		\item Organisatorische Änderungen
+		\item Organisatorische Änderungen wie beispielsweise wechselnde Projektverantwortliche
+		\item Grundlegend falsch gewählte Technologien
 		\item \ldots
 	\end{itemize}
 \end{frame}
+\fi
 
-\subsection{Qualitaetssicherung}
 \begin{frame}
-\frametitle{Qualitaetssicherung}
-\huge Qualitaetssicherung
+\frametitle{Analyse und Bewertung von Risiken}
+	\begin{block}{Risikowert}
+		Risikowert = p * K
+		\begin{itemize}
+			\item p = Eintrittswahrscheinlichkeit
+			\item K = Kosten die im Schadensfall enstehen
+		\end{itemize}
+	\end{block}
+	\begin{itemize}
+		\item Risiken mit p \textgreater 0.5 sollten als sicheres Ereignis angesehen werden
+		\item Jeder Risikowert kann als Punkt in einem Risikodiagramm eingesetzt werden
+		\item Ein Risikodiagramm besitzt auf beiden Achsen eine logarithmische Skalierung
+		\item Kleine Risikowerte müssen nicht Kontrolliert werden
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Risikodiagramm}
+	Das dargestellte Risikodiagramm bewertet Risikowerte bis 10000 Euro als akzeptabel
+	\center\includegraphics[width=1\textwidth,
+		keepaspectratio=true]{bilder/risikodiagramm.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Risikodiagramm}
+	\begin{itemize}
+		\item Für Punkte unter der Diagonalen sind keine Aktionen erforderlich
+		\item Punkte über der Diagonalen müssen nach links oder unten verschoben werden
+		\item Senkung der Kosten bei Risikoeintritt verschiebt den Punkt nach unten (Pfeil a)
+		\item Senkung der Wahrscheinlichkeit verschiebt den Punkt nach links (Pfeil b)
+		\item Alle Maßnahmen führen zu zusätzlichen sicheren Kosten die deutlich geringer sind
+					als der mögliche Schaden
+		\item Oben liegen extreme Risiken deren Schaden nicht beherrschbar ist (z.B. Firmenbankrott)
+		\item Bei einem solchen Extremrisiko kann eine Versicherung in Erwägung gezogen werden die aus
+					großem Eintrittschaden eine kleinere sichere Zahlung macht (Pfeil c)
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Risikomatrix}
+	Alternativ kann man mit einer diskreten Bewertung arbeiten
+		\begin{table}[]
+			\begin{tabular}{ll}
+			 Wert (p) & Eintrittswahrscheinlichkeit \\
+			 \hline
+			 1 & Unwahrscheinlich \\
+			 2 & Denkbar \\
+			 3 & Wahrscheinlich \\
+			 	 &	\\
+			 Wert (k) & Schadensausmaß \\
+			 \hline
+			 1 & Gering \\
+			 2 & Beträchtlich \\
+			 3 & Groß
+			\end{tabular}
+		\end{table}
+\end{frame}
+
+\begin{frame}
+\frametitle{Risikomatrix}
+	Die Risiken können entsprechend klassifiziert werden um daraus eine Risikomatrix
+	abzuleiten.
+	\bigskip
+	\begin{small}
+		\begin{table}[]
+			\begin{tabular}{l|lll}
+			 Groß 				& \cellcolor[HTML]{FFCD69} 3 & \cellcolor[HTML]{FC6D58} 6 & \cellcolor[HTML]{D8334A} 9 \\
+			 Beträchtlich & \cellcolor[HTML]{E8CE4D} 2 & \cellcolor[HTML]{F39C12} 4 & \cellcolor[HTML]{FC6D58} 6 \\
+			 Gering 			& \cellcolor[HTML]{9FD477} 1 & \cellcolor[HTML]{E8CE4D} 2 & \cellcolor[HTML]{FFCD69} 3 \\
+			 \hline
+			 							& Unwahrscheinlich  				 & Denkbar 										& Wahrscheinlich
+			\end{tabular}
+		\end{table}
+	\end{small}
+	\bigskip
+	Auch hier ist zu bestimmen welche Risikowerte kontrolliert werden müssen.
+\end{frame}
+
+\begin{frame}
+\frametitle{Gegenmaßnahmen}
+	\begin{itemize}
+		\item Zur Risikobegrenzung sollten Zeit-/Geldreservern eingeplant werden
+		\item Die Rückstellung sollte dem Risikowert entsprechen
+		\item Präventivmaßnahmen sind aktiv
+					\begin{itemize}
+						\item Senken der Eintrittswahrscheinlichkeit
+						\item Schaden auf eine vertretbae Höhe beschränken
+					\end{itemize}
+		\item Notfallmaßnahmen im Schadensfall sind reaktiv
+		\item Präventive und reaktive Maßnahmen müssen im Projektplan berücksichtigt werden
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Übung 3.2}
+	In ihrem Projekt haben Sie den weggang eines wichtigen Mitarbeiters als Risiko identifiziert.
+	Nennen Sie eine Präventivmaßnahme, um die Eintrittswahrscheinlichkeit dieses Risikos zu senken
+	sowie eine Präventivmaßnahme um die Höhe des Schadens zu senken. Was ist eine mögliche
+	Notfallmaßnahme?
+\end{frame}
+
+\ifloesung
+\begin{frame}
+\frametitle{Übung 3.2 - Lösung}
+	Eintrittswahrscheinlichkeit senken:
+	\begin{itemize}
+		\item Horizontale/Vertikale Karriereanreiz schaffen
+	\end{itemize}
+
+	Schaden senken:
+	\begin{itemize}
+		\item Wissensmanagement/Projektkonzept für schnelle Einarbeitung etablieren
+	\end{itemize}
+
+	Notfallmaßnahme:
+	\begin{itemize}
+		\item Projektscope verkleinern
+	\end{itemize}
+\end{frame}
+\fi
+
+\begin{frame}
+\frametitle{Risikoüberwachung}
+	\begin{itemize}
+		\item Risiken ändern sich während des Projektverlaufs
+					\begin{itemize}
+						\item Schwächen ab
+						\item Verstärken sich
+						\item Sind nicht mehr existent
+						\item Entstehen
+					\end{itemize}
+		\item Risikosituation musst stetig neu bewertet werden
+		\item Regelmäßige Projektsitzungen sind unabdinglich
+		\item Risiken müssen offen kommuniziert werden dürfen
+	\end{itemize}
+\end{frame}
+
+\subsection{Qalitätssicherung}
+\begin{frame}
+\frametitle{Qalitätssicherung}
+\huge Qalitätssicherung
+\end{frame}
+
+\begin{frame}
+\frametitle{Qalitätssicherung}
+	\begin{block}{Qualität}
+		Gesamtheit von Eigenschaften und Merkmalen eines Produktes oder einer Tätigkeit,
+		die sich auf die Eignung zur Erfüllung gegebener Erfordernisse beziehen.
+	\end{block}
+	\begin{itemize}
+		\item Im Software Engineering gibt es zwei Sichtweisen auf die Qualität
+		\begin{itemize}
+			\item Prozessqualität (z.B. bewertbar durch CMMI)
+			\item Produktqualität
+		\end{itemize}
+		\item Produktqualität umfasst Wartbarkeit und Brauchbarkeit
+		\item Geforderte Qualitätsanforderungen müssen definiert und die Einhaltung
+					dieser Anforderungen geprüft werden
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Qalitätssicherung}
+	\begin{block}{Qualitätsmanagement}
+		Aufeinander abgestimmte Tätigkeiten zum Leiten und Lenken einer Organisation
+		bezüglich Qualität, die üblicherweise das festlegen der Qualitätspolitik und
+		-ziele, die -planung, die -lenkung die -sicherung und die Qualitätsverbesserung
+		umfassen.
+	\end{block}
+	\begin{itemize}
+		\item Unter Qualitätsmanagement werden die managementbezogenen Tätigkeiten zusammengefasst
+		\item Unter Qualitätssicherung werden die technisch orientierten Aktivitäten zusammengefasst
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Qalitätssicherung}
+	Es werden drei Maßnahmen zur Qualitätssicherung unterschieden
+	\begin{itemize}
+		\item Organisatorische Maßnahmen
+					\begin{itemize}
+						\item Systematische Entwicklung und QS
+						\item Zeitplanung für Testing und Bugfixing
+						\item Rollen / Verantwortlichkeiten für QS
+						\item Vorgabe von Richtlinien, Standards, Checklisten
+					\end{itemize}
+		\item Konstruktive Maßnahmen
+					\begin{itemize}
+						\item Fehler und schlechte Qualität von Beginn an vermeiden
+						\item ``Es kann keine Qualität in ein Produkt hineingeprüft werden''
+					\end{itemize}
+		\item Analytische Maßnahmen
+					\begin{itemize}
+						\item Software-Tests
+						\item Metriken
+						\item Audits
+						\item Fehler und Mängel in den Arbeitsergebnissen erkennen
+					\end{itemize}
+	\end{itemize}
+	Organisatorische und konstruktive Maßnahmen sind hilfreicher als analytische Maßnahmen.
+\end{frame}
+
+\begin{frame}
+\frametitle{Übung 3.3}
+	Nennen Sie konstruktive Maßnahmen die dabei helfen Mängeln bei der Software-Entwicklung aus dem
+	Weg zu gehen.
+\end{frame}
+
+\ifloesung
+\begin{frame}
+\frametitle{Übung 3.3 - Lösung}
+	\begin{itemize}
+		\item Passendes und vor allem korrekt eingesetztes Vorgehensmodell definieren
+		\item Eingeplante Code-Reviews
+		\item Pair-Programming
+		\item Definierte Quality Gates mit klaren abnahmekriterien
+		\item Einführung von Continuous Integration und Continuous Deployment
+		\item Verwendung von typisierter Programmiersprache
+		\item Schulungen
+		\item Konfigurationsmanagement
+		\item Passende Werkzeuge/Methoden etablieren
+		\item \ldots
+	\end{itemize}
+\end{frame}
+\fi
+
+\begin{frame}
+\frametitle{Qalitätssicherung}
+	\begin{itemize}
+		\item Fehler die früh in der Entwicklung entstehen und unentdeckt bleiben können zu Summationseffekten
+		in späteren Phasen führen
+		\item Folgende Ziele sollten verfolgt werden:
+					\begin{itemize}
+						\item Kein Fehler machen (z.B. durch konstruktive Maßnahmen)
+						\item Fehler die dennoch gemacht wurden möglichst früh entdecken und beseitigen
+					\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Übung 3.4}
+	Es wird ein Software-Test vorgenommen. Ist es ratsam, jeden entdeckten Fehler sofort zu
+	korrigieren oder gibt es Gründe die Korrektur von der Prüfung zu trennen?
+\end{frame}
+
+\ifloesung
+\begin{frame}
+\frametitle{Übung 3.4 - Lösung}
+	\begin{itemize}
+		\item Korrektur ist Änderung des Artifakts und bedarf eines erneuten Deployments
+		\item Korrektor kann langwierig sein (von wenigen Minuten bis zu mehreren Tagen)
+		\item Einfache Fehler mit geringen Effekten haben ggf. weniger Priorität
+		\item \ldots
+	\end{itemize}
+	Es sollte stehts zwischen Test und Korrektur getrennt werden.
+\end{frame}
+\fi
+
+\begin{frame}
+\frametitle{Agiles Qualitätsmanagement}
+	\begin{itemize}
+		\item Qualität in der agilen Softwareentwicklung bedeutet Codequalität
+		\item Fokus liegt auf Praktiken wie Refactoring und testgetriebener Entwicklung
+		\item QM ist formlos und basiert auf qualitätsgetriebener Projektkultur
+		\item Jedes Teammitglied ist für SW-Qualität im Projekt verantwortlich
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Good practices im agilen Qualitätsmanagement}
+	\begin{itemize}
+		\item Check before check-in \\
+				  Entwickler organisieren selbst Code-Review bevor Code gemerged wird
+		\item Never break the build \\
+		 			Es wird kein Code gepushed der das System als Ganzes zerstört. Wer einen
+					fehlerhaften Build pushed muss die Probleme mit höchster Priorität beheben
+		\item Fix problems when you see them \\
+		 			Der Code des Systems gehört dem ganzen Team. Findet ein Entwickler einen Fehler
+					kann er ihn selbst beheben ohne auf den Autor verweisen zu müssen.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Good practices im agilen Qualitätsmanagement}
+	\begin{itemize}
+		\item Testgetriebene Entwicklung \\
+					Test first programming. Es wird zuerst der Testfall geschrieben und im Anschluss
+					gegen ihn entwickelt
+		\item Continuous Integration
+					Kontinuierliche Integration von Codeänderungen mit anschließender Verfikikation
+					durch Bau des Artefakts
+		\item Continuous Delivery
+					Möglichkeit kontinuierlich Codeänderungen auf QA/Produktionssysteme in Betrieb
+					nehmen zu können
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Grundvoraussetzungen für agiles Qualitätsmanagement}
+	\center\includegraphics[width=1\textwidth,
+		keepaspectratio=true]{bilder/continuous_delivery.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Test-Pyramide}
+	\center\includegraphics[width=1\textwidth,
+		keepaspectratio=true]{bilder/test_pyramide.png}
+	\end{frame}
+
+\begin{frame}
+\frametitle{Test-Eiswaffel}
+	\center\includegraphics[width=1\textwidth,
+		keepaspectratio=true]{bilder/test_eiswaffel.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Programmtest}
+	\begin{itemize}
+		\item Weist fehlerfreiheit des Software-Systems nach
+		\item Aufgrund der hohen Komplexität ist Nachweis von Fehlerfreiheit unmöglich
+		\item Ziel des Testens ist es daher möglichst viele vorhandene Fehler zu finden
+		\item Konkretes Programm wird dazu ausgeführt und mit Werten gefüttert
+		\item Ist-Werte werden mit den Soll-Werten aus der Spezifikation verglichen
+		\item Bei Abweichung zwischen Ist-Wert und Soll-Wert liegt ein Fehler vor
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Programmtest}
+	Systematische Tests
+	\begin{itemize}
+		\item Randbedingungen (z.B. Systemumgebung) ist definiert
+		\item Eingaben werden systematisch ausgewählt
+		\item Soll-Werte werden vor dem Test festgelegt
+		\item Gesamter Test wird dokumentiert
+		\item Test und Korrektur finden getrennt statt
+	\end{itemize}
+	Systematische Tests sind stets reproduzierbar und damit objektiv und wiederholbar.
+\end{frame}
+
+\begin{frame}
+\frametitle{Programmtest}
+	Es können verschiedene Eigenschaften eines Programms getestet werden woraus sich folgende
+	Testklassifikation ergibt
+	\begin{itemize}
+		\item Funktionstest
+		\item Last- und Stresstest
+		\item Verfügbarkeitstest
+		\item Installationstest
+		\item Wiederinbetriebnahmetest
+	\end{itemize}
+	Mindestens Funktions- oder Lasttests sollten systematisch durchgeführt werden.
+\end{frame}
+
+\begin{frame}
+\frametitle{Programmtest}
+	\begin{itemize}
+		\item Ein vollständiger Test deckt alle möglichen Eingaben für ein Programm ab
+		\item Ist ein vollständiger Test fehlerfrei wurde die Korrektheit des Programms bewiesen
+		\item Bereits für einfache Funktion mit ganzahligem Parameter ergibt dies 2\textsuperscript{32} Möglichkeiten
+		\item Aus diesem Grund wird Teilmenge getestet und die Eingaben werden geeignet gewählt
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Black-Box Test}
+	\begin{block}{Black-Box Test}
+		Testfälle werden auf Basis der in der Spezifikation geforderten Eigenschaften gewählt.
+		Die innere Beschaffenheit des Programms spielt keine Rolle.
+	\end{block}
+	\begin{itemize}
+		\item Testfälle werden aufgestellt sobald die Spezifikation vorliegt
+		\item Folgende Verfahren werden zur Bestimmung der Testfälle betrachtet:
+			\begin{itemize}
+				\item Funktionale Äquivalenzklassenbildung
+				\item Grenzwertanalyse
+				\item Test spezieller Werte
+				\item Zufallstest
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Funktionale Äquivalenzklassenbildung}
+	\begin{itemize}
+		\item Angenommen es existiert eine Menge E = {e1, e2, ..., en} von Eingaben auf die das
+					das Programm identisch reagiert
+		\item Dann reicht es aus lediglich eine Eingabe dieser Menge zu testen
+		\item Wenn die Eingabe fehlerfrei ist kann man von Korrektheit der restlichen Eingaben ausgehen
+		\item Eine solche Menge wird als Äquivalenzklasse bezeichnet
+		\item Jede Eingabe aus der Äquivalenzklasse ist damit repräsentativ für jede andere Eingabe
+					der Äquivalenzklasse
+		\item In der Praxis wird häufig nur vermutet das Eingaben Äquivalent, dann wird auch von
+					schwacher Äquivalenz gesprochen
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Vorgehen bei Äquivalenzklassentest}
+	\begin{enumerate}
+		\item Menge der Eingaben wird in Äquivalenzklassen zerlegt
+		\item Testfälle werden aus Eingaben aus möglichst vielen Äquivalenzklassen zusammengestellt
+		\item Ein Testfall sollte höchstens nur eine Eingabe aus einer ungültigen Äquivalenzklasse
+					enthalten um die Fehlerbehandlung klar identifizieren zu können
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\frametitle{Grenzwertanalyse}
+	\begin{itemize}
+		\item Besitzen die Äquivalenzklassen eine natürliche Ordnung werden die Elemente der Klasse
+					gewählt die an den Grenzen liegen
+		\item Annäherung an die Grenzen kann vom gültigen und vom ungültigen Bereich der Klasse erfolgen
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Test spezieller Werte}
+	\begin{itemize}
+		\item Bei zunehmender Testerfahrung werden Eingaben identifiziert die fehleranfälliger sind
+					als andere
+		\item Diese Eingaben werden für spätere Testfälle dokumentiert
+		\item Beispiele: leere Eingabe, Sonderzeichen
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Zufallstest}
+	\begin{itemize}
+		\item Testfälle werden zufällig generiert
+		\item Datentypen und Struktur der Eingaben müssen bei Generierung berücksichtigt werden
+		\item Ist ein ergänzendes Verfahren
+		\item Deckt auch nicht naheliegene Eingaben ab
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{White-Box Test}
+	\begin{block}{White-Box Test}
+		Der Programmcode ist sichtbar. Es wird ein Strukturtest vorgenommen. Dabei wird die
+		überdeckung des Codes durch die Testfälle analysiert. Das Ziel ist es eine vorgegebene
+		Überdeckungsrate zu erreichen.
+	\end{block}
+	\begin{itemize}
+		\item Um die Überdeckungsrate bestimmen zu können muss das Programm mit zusätzlichen
+					Anweisungen für die Messung instrumentiert werden
+		\item Dadurch kann z.B. gezählt werden wie häufig eine Programmzeile ausgeführt wurde
+		\item Es werden verschiedene Überdeckungskriterien unterschieden
+					\begin{itemize}
+						\item Anweisungsüberdeckung
+						\item Zweigüberdeckung
+						\item Bedingungsüberdeckung
+					\end{itemize}
+	\end{itemize}
 \end{frame}
 
 \subsection{Messen/Bewerten}
 \begin{frame}
 \frametitle{Messen und Bewerten}
 \huge Messen und Bewerten
+\end{frame}
+
+\begin{frame}
+\frametitle{Projekt-Controlling - Fertigstellungsgrad}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Projekt-Controlling - EVA}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Software-Metriken}
+
 \end{frame}
