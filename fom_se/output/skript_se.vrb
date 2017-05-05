@@ -1,6 +1,2 @@
-\frametitle{Number of children (NOC)}
-		\begin{itemize}
-		  \item Misst die Anzahl der direkten Kindklassen einer Vaterklasse
-			\item NOC misst die Breite einer Klassenhierarchie während DIT die Tiefe misst
-			\item Ein hoher Wert gilt als Indikator für hohe Wiederverwendung
-		\end{itemize}
+\frametitle{Requirements Engineering}
+\huge Requirements Engineering
