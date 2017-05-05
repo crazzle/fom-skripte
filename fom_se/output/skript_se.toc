@@ -1,5 +1,11 @@
 \beamer@endinputifotherversion {3.36pt}
-\beamer@sectionintoc {1}{Projektmanagement}{3}{0}{1}
-\beamer@subsectionintoc {1}{1}{Risikomanagement}{8}{0}{1}
-\beamer@subsectionintoc {1}{2}{Qalit\IeC {\"a}tssicherung}{23}{0}{1}
-\beamer@subsectionintoc {1}{3}{Messen/Bewerten}{49}{0}{1}
+\beamer@sectionintoc {1}{Voraussetzungen}{4}{0}{1}
+\beamer@sectionintoc {2}{Einf\IeC {\"u}hrung}{7}{0}{2}
+\beamer@sectionintoc {3}{Vorgehensmodelle}{36}{0}{3}
+\beamer@subsectionintoc {3}{1}{Basismodelle}{47}{0}{3}
+\beamer@subsectionintoc {3}{2}{Monumentale Prozessmodelle}{93}{0}{3}
+\beamer@subsectionintoc {3}{3}{Agile Prozessmodelle}{108}{0}{3}
+\beamer@sectionintoc {4}{Projektmanagement}{129}{0}{4}
+\beamer@subsectionintoc {4}{1}{Risikomanagement}{134}{0}{4}
+\beamer@subsectionintoc {4}{2}{Qualit\IeC {\"a}tssicherung}{149}{0}{4}
+\beamer@subsectionintoc {4}{3}{Messen/Bewerten}{175}{0}{4}

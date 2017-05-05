@@ -1,8 +1,18 @@
 %\part{Einfuehrung}
 
 %----------------------------------------------------------------------------
-\section{Voraussetzungen}
 \begin{frame}[fragile]
+	\frametitle{Information}
+	Das Skript wurde in Anlehnung an die Vorlesungen
+	\begin{itemize}
+		 \item Allgemeine Methoden des Software Engineering, Prof. Dr. Dirk Wiesmann
+		 \item Spezielle Methoden des Software Engineering, Prof. Dr. Wolf Ritschel
+	 \end{itemize}
+	 erstellt und enthält Auszüge aus den jeweiligen Skripten der Dozenten.
+\end{frame}
+
+\section{Voraussetzungen}
+\begin{frame}
 	\frametitle{Voraussetzungen}
 \huge Voraussetzungen
 \end{frame}
@@ -246,7 +256,7 @@
 \frametitle{Software Engineering}
 	\begin{itemize}
 		\item Auslöser für Begriff ``Software Engineering'' war Softwarekrise von 1968
-		\item Begriff ``Software Engineering'' wurde 1967 von F.L. Bauer (ehemaliger Prof. in München) 
+		\item Begriff ``Software Engineering'' wurde 1967 von F.L. Bauer (ehemaliger Prof. in München)
 		im Rahmen einer ``Study Group on Computer Science'' der NATO geprägt.
 		\item Software wurde erstmals als Industrieprodukt bezeichnet
 	\end{itemize}
@@ -268,9 +278,9 @@
 \begin{frame}
 \frametitle{Was ist Software Engineering}
 	\begin{block}{Definition Lehrbuch Software-Technick (Balzert) }
-		Zielorientierte Bereitstellung und systematische Verwendung von Prinzipien, Methoden, Konzepten, 
-		Notationen und Werkzeugen für die arbeitsteilige, ingenieurmäßige Entwicklung und Anwendung von 
-		umfangreichen Software-Systemen. Zielorientiert bedeutet die Berücksichtigung z.B. von Kosten, 
+		Zielorientierte Bereitstellung und systematische Verwendung von Prinzipien, Methoden, Konzepten,
+		Notationen und Werkzeugen für die arbeitsteilige, ingenieurmäßige Entwicklung und Anwendung von
+		umfangreichen Software-Systemen. Zielorientiert bedeutet die Berücksichtigung z.B. von Kosten,
 		Zeit, Qualität.
 	\end{block}
 \end{frame}
@@ -392,19 +402,19 @@ die zur Entwicklung von Software führen.
 \begin{frame}
 \frametitle{Übung 1.2}
 	\scriptsize
-	Eine Kundenbetreuerin im Firmenkundengeschäft einer Bank hat auf Grundlage eines 
-	Tabellenkalkulationsprogramms eine kleine persönliche Anwendung geschrieben, 
-	die sie bei der Überprüfung der Kredite der von ihr betreuten Firmen unterstützt. 
-	Die notwendigen Daten gibt sie jeweils von Hand ein. Der Abteilungsleiter sieht 
-	diese Anwendung zufällig, ist davon angetan und beschließt, sie allen Kundenbetreuerinnen 
-	und -betreuer zur Verfügung stellen. Die notwendigen Daten sollen jetzt automatisch aus 
-	den Datenbanken der Bank übernommen werden. Die Kundenbetreuerin gibt an, für die Entwicklung 
-	ihrer Anwendung insgesamt etwa vier Arbeitstage aufgewendet zu haben. Der Abteilungsleiter 
-	veranschlagt daher für die Übernahme und die gewünschten Änderungen einen Aufwand von einer 
-	Arbeitswoche. Als die geänderte Anwendung endlich zur Zufriedenheit aller Beteiligten läuft, 
-	sind jedoch rund acht Arbeitswochen Aufwand investiert. Der Abteilungsleiter erzählt die 
-	Geschichte einem befreundeten Berater als Beispiel, dass Informatikprojekte nie ihre Termine 
-	einhalten. Darauf meint der Berater trocken, der investierte Aufwand sei völlig realistisch 
+	Eine Kundenbetreuerin im Firmenkundengeschäft einer Bank hat auf Grundlage eines
+	Tabellenkalkulationsprogramms eine kleine persönliche Anwendung geschrieben,
+	die sie bei der Überprüfung der Kredite der von ihr betreuten Firmen unterstützt.
+	Die notwendigen Daten gibt sie jeweils von Hand ein. Der Abteilungsleiter sieht
+	diese Anwendung zufällig, ist davon angetan und beschließt, sie allen Kundenbetreuerinnen
+	und -betreuer zur Verfügung stellen. Die notwendigen Daten sollen jetzt automatisch aus
+	den Datenbanken der Bank übernommen werden. Die Kundenbetreuerin gibt an, für die Entwicklung
+	ihrer Anwendung insgesamt etwa vier Arbeitstage aufgewendet zu haben. Der Abteilungsleiter
+	veranschlagt daher für die Übernahme und die gewünschten Änderungen einen Aufwand von einer
+	Arbeitswoche. Als die geänderte Anwendung endlich zur Zufriedenheit aller Beteiligten läuft,
+	sind jedoch rund acht Arbeitswochen Aufwand investiert. Der Abteilungsleiter erzählt die
+	Geschichte einem befreundeten Berater als Beispiel, dass Informatikprojekte nie ihre Termine
+	einhalten. Darauf meint der Berater trocken, der investierte Aufwand sei völlig realistisch
 	und normal. Begründen Sie warum.
 	\normalsize
 \end{frame}
@@ -414,16 +424,16 @@ die zur Entwicklung von Software führen.
 \frametitle{Übung 1.2 - Lösung}
 	\scriptsize
 	\begin{itemize}
-		\item Die Kundenbetreuerin hat das Fachkonzept ihrer Tabellenkalkulationsanwendung vermutlich 
-		schon vor den angegebenen vier Tagen Bearbeitungszeit im Kopf gehabt. Die Fremdentwickler 
+		\item Die Kundenbetreuerin hat das Fachkonzept ihrer Tabellenkalkulationsanwendung vermutlich
+		schon vor den angegebenen vier Tagen Bearbeitungszeit im Kopf gehabt. Die Fremdentwickler
 		müssen dieses zumindest erst nachvollziehen.
-		\item Die neue Anwendung ist durch die Datenbankanbindung mit den entsprechenden Schnittstellen 
+		\item Die neue Anwendung ist durch die Datenbankanbindung mit den entsprechenden Schnittstellen
 		und Zugriffsrechteproblematiken deutlich komplexer.
-		\item Der Kommunikationsaufwand schon allein von Kundenseite (viele Berater = viele unterschiedliche 
+		\item Der Kommunikationsaufwand schon allein von Kundenseite (viele Berater = viele unterschiedliche
 		Meinungen) ist erheblich
-		\item Die neu entstandene ``professionelle'' Anwendung hat einen erheblich höheren Aufwand für 
+		\item Die neu entstandene ``professionelle'' Anwendung hat einen erheblich höheren Aufwand für
 		die Validierung als eine eigengenutzte Entwicklung.
-		\item An die Bedienbarkeit (Nutzerschnittstelle) werden bei einer ``professionellen'' Anwendung 
+		\item An die Bedienbarkeit (Nutzerschnittstelle) werden bei einer ``professionellen'' Anwendung
 		erheblich höhere Ansprüche gestellt.
 	\end{itemize}
 \end{frame}

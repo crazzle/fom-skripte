@@ -259,14 +259,14 @@
 	\end{itemize}
 \end{frame}
 
-\subsection{Qalitätssicherung}
+\subsection{Qualitätssicherung}
 \begin{frame}
-\frametitle{Qalitätssicherung}
-\huge Qalitätssicherung
+\frametitle{Qualitätssicherung}
+\huge Qualitätssicherung
 \end{frame}
 
 \begin{frame}
-\frametitle{Qalitätssicherung}
+\frametitle{Qualitätssicherung}
 	\begin{block}{Qualität}
 		Gesamtheit von Eigenschaften und Merkmalen eines Produktes oder einer Tätigkeit,
 		die sich auf die Eignung zur Erfüllung gegebener Erfordernisse beziehen.
@@ -284,7 +284,7 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{Qalitätssicherung}
+\frametitle{Qualitätssicherung}
 	\begin{block}{Qualitätsmanagement}
 		Aufeinander abgestimmte Tätigkeiten zum Leiten und Lenken einer Organisation
 		bezüglich Qualität, die üblicherweise das festlegen der Qualitätspolitik und
@@ -298,7 +298,7 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{Qalitätssicherung}
+\frametitle{Qualitätssicherung}
 	Es werden drei Maßnahmen zur Qualitätssicherung unterschieden
 	\begin{itemize}
 		\item Organisatorische Maßnahmen
@@ -349,7 +349,7 @@
 \fi
 
 \begin{frame}
-\frametitle{Qalitätssicherung}
+\frametitle{Qualitätssicherung}
 	\begin{itemize}
 		\item Fehler die früh in der Entwicklung entstehen und unentdeckt bleiben können zu Summationseffekten
 		in späteren Phasen führen
@@ -585,16 +585,324 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{Projekt-Controlling - Fertigstellungsgrad}
+\frametitle{Projekt-Controlling}
+	\begin{itemize}
+		\item Während des Projektverlaufs muss der Projektfortschritt durchgehend kontrolliert
+					und gesteuert werden
+		\item Dabei müssen folgende Tätigkeiten ausgeführt werden
+					\begin{enumerate}
+						\item Das Soll ermitteln
+						\item Das Ist ermitteln
+						\item Soll-Ist-Vergleich
+						\item Bei Abweichung korrigierende Maßnahmen einrichten
+					\end{enumerate}
+		\item Projekt-Controlling setzt voraus dass bereits geleistete Arbeitsstunden erfasst wurden
+		\item Arbeitsstunden der Mitarbeiter werden jeweiligen Arbeitspaketen zugeordnet
+		\item Ist-Wert kann mit geplanten Soll-Wert (Aufwandsschätzung) verglichen werden
+	\end{itemize}
+\end{frame}
 
+\begin{frame}
+\frametitle{Übung 3.5}
+	Wann entstehen Abweichungen zwischen dem Ist-Aufwand und dem geplanten Soll-Aufwand für ein
+	Arbeitspaket?
+\end{frame}
+
+\ifloesung
+\begin{frame}
+\frametitle{Übung 3.5 - Lösung}
+	\begin{itemize}
+		\item Mangelnde technische Kenntnisse
+		\item Externe Abhängikeiten die zu Verzögerung führen
+		\item Aufwand für noch zu erledigende Leistungen wird unterschätzt
+		\item Erbrachte Leistung wurde überschätzt
+		\item \ldots
+	\end{itemize}
+\end{frame}
+\fi
+
+\begin{frame}
+\frametitle{Projekt-Controlling - Fertigstellungsgrad}
+	\begin{block}{Fertigstellungsgrad 1}
+		FG1 = Ist-Aufwand / Geschätzter Gesamtaufwand
+	\end{block}
+	Selbst wenn die Schätzung des Gesamtaufwands gut ist, wird FG1 am Ende des Projektes ungenau.
+	Daher ist es besser eine transparentere Aufwandsschätzung zu verwenden, die den geschätzten
+	Restaufwand miteinbezieht.
+	\begin{block}{Fertigstellungsgrad 2}
+		FG2 = Ist-Aufwand / (Ist-Aufwand + Geschätzter Restaufwand)
+	\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Projekt-Controlling - Fertigstellungsgrad}
+	Ist es aus organisatorischen Gründen nicht möglich den Ist-Aufwand zeitnah zur
+	Verfügung zu stellen kann man den erarbeiteten Wert verwenden.
+	\begin{block}{Erarbeiteter Wert}
+		EW = Geplanter Aufwand - Restaufwand
+	\end{block}
+	Daraus ergibt sich der Fertigstellungsgrad 3.
+	\begin{block}{Fertigstellungsgrad 3}
+		FG3 = EW / Geplanter Aufwand
+	\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Projekt-Controlling - Fertigstellungsgrad}
+	Der Fertigstellungsgrad kann auch auf Grundlage der bereits abgeschlossenen Arbeitspakete
+	berechnet werden.
+	\begin{block}{Fertigstellungsgrad 4}
+		FG4 = Anzahl abgeschlossener Arbeitspakete / Gesamtzahl Arbeitspakete
+	\end{block}
+	Bereits begonnene aber nocht nicht abgeschlossene Arbeitspakete werden nicht berücksichtigt.
 \end{frame}
 
 \begin{frame}
 \frametitle{Projekt-Controlling - EVA}
+Earned Value Analysis
+	\begin{itemize}
+		\item Bewertung des Projektfortschritts
+		\item Prognose über den voraussichtlichen Endtermin
+		\item Prognose über zu erwartende Gesamtkosten
+		\item Bereitstellung von Kennzahlen zur Steuerung
+	\end{itemize}
+	\scriptsize
+	\begin{table}[]
+		\begin{tabular}{lll}
+		 BAC & Budget At Completion & Geschätzter Gesamtaufwand des Projekts \\
+		 PV & Planned Value & Geplante Kosten pro Arbeitspaket \\
+		 AC & Actual Cost & Ist-Kosten pro Arbeitspaket \\
+		 EV & Earned Value & Fertigstellungswert \\
+		\end{tabular}
+	\end{table}
+	\normalsize
+	\begin{itemize}
+		\item PV, AC und EV beziehen sich auf den Berichtszeitpunkt
+		\item EV gibt die Ist-Kosten bereits abgeschlossener Arbeit wieder
+		      = Wert des Gewerks entsprechend dem erzielten Fortschritt.
+	\end{itemize}
+\end{frame}
 
+\begin{frame}
+\frametitle{Übung 3.6}
+	Ein Arbeitspaket ist mit 5 Arbeitstagen geplant. Jeder Arbeitstag kostet 1000 Euro.
+	Zum Berichtszeitpunkt (geplantes Ende des Arbeitspakets, t=5) liegt folgende Situation vor:
+	Das AP konnte erst einen Tag später als geplant begonnen werden. Aufgrund von Problemen
+	konnte auch nur die Leistung erbracht werden für die drei Tage vorgesehen waren. Bestimmen
+	Sie PV, AC und EV.
+\end{frame}
+
+\ifloesung
+\begin{frame}
+\frametitle{Übung 3.6 - Lösung}
+	\begin{itemize}
+		\item PV: 1000 * 5 = 5000
+		\item AC: 1000 * 4 = 4000
+		\item EV: 5000 * (3 / 5) = 3000
+	\end{itemize}
+\end{frame}
+\fi
+
+\begin{frame}
+\frametitle{Projekt-Controlling - EVA}
+	\begin{itemize}
+		\item Mit folgenden Messgrößen können die Kosten- und Zeitabweichungen
+					von der Planung bestimmt werden.
+	\end{itemize}
+	\scriptsize
+	\begin{table}[]
+		\begin{tabular}{lll}
+		 CV & Cost Variance (Kostenabweichung) & CV = EV - AC \\
+		 SV & Schedule Variance (Zeitabweichung) & SV = EV - PV \\
+		\end{tabular}
+	\end{table}
+	\normalsize
+\end{frame}
+
+\begin{frame}
+\frametitle{Übung 3.7}
+	Bestimmen Sie CV und SV für das Arbeitspaket aus Aufgabe 3.6.
+	Was bedeuten diese Werte?
+\end{frame}
+
+\ifloesung
+\begin{frame}
+\frametitle{Übung 3.7 - Lösung}
+	\begin{itemize}
+		\item CV: 3000 - 4000 = -1000 \\
+					Negative Kostenabweichung deutet auf höhere Kosten im Verhältnis zur Planung hin
+		\item SV: 3000 - 5000 = -2000 \\
+					Negative SV deutet auf Zeitverzug hin
+	\end{itemize}
+\end{frame}
+\fi
+
+\begin{frame}
+\frametitle{Projekt-Controlling - EVA}
+	\center\includegraphics[width=1\textwidth,
+		keepaspectratio=true]{bilder/ev_analyse.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Projekt-Controlling - EVA}
+	Das Projekt kann über die folgenden Leistungskennzahlen bewertet werden:
+	\scriptsize
+	\begin{table}[]
+		\begin{tabular}{lll}
+		 CPI & Cost Performance Index & CV = EV / AC \\
+		 SPI & Schedule Performance Index & SV = EV / PV \\
+		\end{tabular}
+	\end{table}
+	\normalsize
+	Bei einem guten Projekt sollten beide Werte in einem schmalen und
+	definiertem Intervall um 1 liegen.
+	\begin{table}[]
+		\begin{tabular}{ll}
+		 \cellcolor[HTML]{9FD477} CPI \textgreater 1 & \cellcolor[HTML]{9FD477} Geleistete Arbeit war günstiger als geplant \\
+		 \cellcolor[HTML]{FC6D58} CPI \textless 1 & \cellcolor[HTML]{FC6D58} Geleistete Arbeit war teurer als geplant \\
+		 \cellcolor[HTML]{9FD477} SPI \textgreater 1 & \cellcolor[HTML]{9FD477} Es konnte mehr erreicht werden als geplant \\
+		 \cellcolor[HTML]{FC6D58} SPI \textless 1 & \cellcolor[HTML]{FC6D58} Arbeitsforschritt ist geringer als geplant \\
+		\end{tabular}
+	\end{table}
+\end{frame}
+
+\begin{frame}
+\frametitle{Projekt-Controlling - EVA}
+	Beispiel: Nach 7 Monaten stellen wir bei einem Projekt die folgenden Werte fest:
+	\begin{itemize}
+		\item AC = 52000
+		\item PV = 40000
+		\item EV = 32000
+		\item SPI = 0.8
+		\item CPI = 0.61
+	\end{itemize}
+	Bis zum Berichtszeitpunkt wurde also 20 Prozent weniger Leistung erbracht als geplant.
+	Da der tatsächliche Aufwand dabei höher war als geplant, liegt das Projekt 39 Prozent
+	unter der Leistung die nach den Kosten zu erwarten war.
+	\normalsize
 \end{frame}
 
 \begin{frame}
 \frametitle{Software-Metriken}
+	Software-Metriken dienen der Quantifizierung der internen Struktur eines Softwaresystems.
+	Sie sind leicht zu messen, müssen jedoch mit Bedacht gewählt und berücksichtigt werden
+	da Sie nicht notwendigerweise Aussagen über die Qualität treffen können.
+	\scriptsize
+	\begin{block}{Dynamische Metriken}
+		Werden während der Ausführung des Programms gesammelt (z.B. während des Testens oder wenn
+		das System produktiv genutzt wird). \\
+		Beispiele: Anzahl Bugtickets des letzten Monats, Anzahl offener TCP Connections, Anzahl arbeitender Threads,
+		verwendeter Heapspace, durschnittliche Round-Trip-Zeit eines Requests \ldots
+	\end{block}
+	\begin{block}{Statische Metriken}
+		Werden aus verschiedenen Sichten / Modellen des Systems gesammelt, wie Beispielsweise Klassendiagrammen,
+		dem Quellcode oder der Dokumentation.
+	\end{block}
+	\normalsize
+	Im folgenden befassen wir uns mit statischen Softwaremetriken.
+\end{frame}
 
+\begin{frame}[fragile]
+	\frametitle{Kopplung}
+		\begin{itemize}
+		  \item Abh\"angigkeit zwischen Klassen
+		  \item Kopplung definiert Grad der Abh\"angigkeit
+		  \item Zeigt Einfluss von \"Anderungen einer Klassen
+		  auf andere Klassen auf
+		  \item Ziel: Lose/Geringe Kopplung zwischen Klassen
+		\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Koh\"asion}
+		\begin{itemize}
+		  \item Grad des Zusammenhangs aller Verantwortlichkeiten, Daten und
+		  Methoden einer Klasse
+		  \item Ziel ist eine hohe Koh\"asion innerhalb einer Klasse/Methode\ldots
+		\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Fan-in / Fan-out}
+		Fan-in
+		\begin{itemize}
+		  \item Anzahl der Methoden die eine andere Methode (z. B. x())  aufrufen
+			\item Eine hohe Anzahl bedeutet eine starke Kopplung von x() zu den restlichen Komponenten
+			\item Änderungen von x() kann tiefgreifende Folgen für das Gesamtsystem haben
+		\end{itemize}
+		Fan-out
+		\begin{itemize}
+		  \item Anzahl der Methoden die von Methode x() aufgerufen werden
+			\item Eine hohe Anzhal bedeutet eine hohe Komplexität von x() da
+						viel Steuerungslogik zur Koordination der Methodenaufrufe nötig ist
+		\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Lines of code (LOC)}
+		\begin{itemize}
+		  \item Misst die Größe des Programms anhand des Quellcodes
+			\item Allgemein gilt je größer eine Komponente ist desto komplexer und fehleranfälliger ist sie
+			\item Eine der zuverlässigsten Metriken zur Vorhersage fehleranfälliger Komponenten
+		\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Cyclomatic Complexity}
+		\begin{itemize}
+		  \item Anzahl linear unabhängiger Pfade innerhalb einer Methode
+			\item Gibt die minimale Anzahl an Tests vor die benötigt werden um eine
+						komplette Testabdeckung der Methode zu erzielen
+			\item Mögliche Berechnung: Anzahl der Verzweigungen mit genau 2 Zweigen + 1
+			\item Bei verschachtelten Verzweigungen oder Verzweigungen mit mehreren möglichen Wegen
+						werden diese auf Binärverzweigungen heruntergebrochen
+		\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Length of identifiers (LOI)}
+		\begin{itemize}
+		  \item Durchschnittliche Länge von Variablen-, Methoden-, Klassennamen \ldots
+			\item Je länger die Namen desto höher ist oftmals die Ausdrücksstärke und Verständlichkeit
+						des Programms
+		\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Depth of conditional nesting}
+		\begin{itemize}
+		  \item Misst die Tiefe der Verzweigungen in einer Methode
+			\item Sehr tiefe Verzweigungsbäume sind häufig schwer zu verstehen, fehleränfällig
+						und lassen sich nur mit Seiteneffekten modifizieren
+		\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Weighted methods per class (WMC)}
+		\begin{itemize}
+		  \item Anzahl der Methoden einer Klasse Gewichtet nach Komplexität
+			\item Einfache Methoden haben eine Komplexität von 1
+			\item Komplexe Methoden können beliebig hohe Gewichtungen erhalten
+			\item Je höher der Wert der Metrik desto komplexer ist die Gesamtstruktur der Klasse
+			\item Oftmals sind komplexe Klassenstrukturen gering Kohäsiv und schwer wiederverwendbar
+		\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Depth of inheritance tree (DIT)}
+		\begin{itemize}
+		  \item Anzahl der Stufen in einem Vererbungsbaum in dem eine Kindklasse die Attribute und Operationen
+						der Vaterklasse erbt
+			\item Je tiefer der Baum desto komplexer die Komponente
+			\item Das Nutzen der Blätter (tiefsten Kindklassen) setzt das Verständis einer hohen Anzahl von Vaterklassen voraus
+		\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Number of children (NOC)}
+		\begin{itemize}
+		  \item Misst die Anzahl der direkten Kindklassen einer Vaterklasse
+			\item NOC misst die Breite einer Klassenhierarchie während DIT die Tiefe misst
+			\item Ein hoher Wert gilt als Indikator für hohe Wiederverwendung
+		\end{itemize}
 \end{frame}
