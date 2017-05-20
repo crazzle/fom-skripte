@@ -263,3 +263,264 @@
 	\bigskip
 	Alle Use Cases modellieren in ihrer Gesamtheit das funktionale Verhalten des Systems
 \end{frame}
+
+\begin{frame}
+\frametitle{Elemente eines Use Case - Akteur}
+	\begin{columns}
+		\begin{column}{.6\textwidth}
+				\begin{itemize}
+					\item Ein Akteur ist jemand/etwas, der/das
+					\begin{itemize}
+						\item \ldots mit dem zu entwickelnden System zusammenarbeitet
+						\item \ldots eine interaktion ausführt
+					\end{itemize}
+					\item Ist stets außerhalb des Systems
+					\item Sind Abstraktionen (Personen/Rollen, Maschinen, Systeme)
+					\item Legen die Systemgrenzen fest
+				\end{itemize}
+		\end{column}
+		\begin{column}{.4\textwidth}
+			\center
+			\includegraphics[width=0.4\textwidth,
+			keepaspectratio=true]{bilder/akteur.png}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Elemente eines Use Case - Use Case}
+	\begin{columns}
+		\begin{column}{.6\textwidth}
+			\begin{itemize}
+				\item Aktivitäten die mit dem System durchgeführt werden
+				\item Aktivitäten die nach außen hin sichtbar sind
+			\end{itemize}
+		\end{column}
+		\begin{column}{.4\textwidth}
+			\center
+			\includegraphics[width=0.6\textwidth,
+			keepaspectratio=true]{bilder/use_case.png}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Elemente eines Use Case - Interaktionsbeziehungen}
+	\begin{columns}
+		\begin{column}{.4\textwidth}
+			\begin{itemize}
+				\item Zusammenhänge von Akteuren und ihren Use Cases
+			\end{itemize}
+		\end{column}
+		\begin{column}{.6\textwidth}
+			\center
+			\includegraphics[width=0.7\textwidth,
+			keepaspectratio=true]{bilder/interaktionsbeziehung.png}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Fortgeschrittene Konzepte - Include}
+	\begin{columns}
+		\begin{column}{.4\textwidth}
+			\scriptsize
+			\begin{itemize}
+				\item Mehrere Use Cases besitzen gleiche Teile
+				\item Gemeinsamer Teil wird in eigenen Use Case ausgelagert
+				\item Wird bei ausführung an entsprechender Stelle aufgerufen
+				\item Ausgelagerter Teil muss sinnvolle Einheit ergeben
+				\item Gerichtet vom Basisfall zum gemeinsamen Teil
+			\end{itemize}
+			\normalsize
+		\end{column}
+		\begin{column}{.6\textwidth}
+			\center
+			\includegraphics[width=1\textwidth,
+			keepaspectratio=true]{bilder/include.png}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Fortgeschrittene Konzepte - Extend}
+	\begin{columns}
+		\begin{column}{.4\textwidth}
+			\scriptsize
+			\begin{itemize}
+				\item Use Case kann an definierten Punkten erweitert werden
+				\item Erweiterung trennt definiertes Verhalten von Optionalem / Ergänzendem
+				\item Basis Use Case ist auch ohne Erweiterung sinnvoll
+				\item Gerichtet von Optionalem zu Basis Use Case
+			\end{itemize}
+			\normalsize
+		\end{column}
+		\begin{column}{.6\textwidth}
+			\center
+			\includegraphics[width=1\textwidth,
+			keepaspectratio=true]{bilder/extend.png}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Fortgeschrittene Konzepte - Generalisierung von Use Cases}
+	\begin{columns}
+		\begin{column}{.35\textwidth}
+			\scriptsize
+			\begin{itemize}
+				\item Möglich bei semantisch ähnlichen Funktionalitäten
+				\item Unter-Use Case erbt alle Eigenschaften des Ober-Use Case
+				\item Unter-Use Case kann modifiziert oder ergänzt werden
+				\item Unter-Use Case kann an jeder Stelle anstatt des Ober-Use Case verwendet werden
+			\end{itemize}
+			\normalsize
+		\end{column}
+		\begin{column}{.65\textwidth}
+			\center
+			\includegraphics[width=1\textwidth,
+			keepaspectratio=true]{bilder/generalisierung_use_case.png}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Fortgeschrittene Konzepte - Generalisierung Akteure}
+	\begin{columns}
+		\begin{column}{.35\textwidth}
+			\scriptsize
+			\begin{itemize}
+				\item Unter-Akteur erbt alle Use Cases des Ober-Akteurs
+				\item Unter-Akteur kann eigene Use Cases erhalten
+			\end{itemize}
+			\normalsize
+		\end{column}
+		\begin{column}{.65\textwidth}
+			\center
+			\includegraphics[width=1\textwidth,
+			keepaspectratio=true]{bilder/generalisierung_akteur.png}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Fortgeschrittene Konzepte - Vorsicht}
+	\begin{alertblock}{Verständlichkeit}
+		Use Cases dienen der Kommunikation mit den Anwendern. Daher müssen sie von diesen
+		verstanden werden können. Es ist nicht Ziel alle der zur Verfügung stehenden Konzepte
+		zu verwenden, denn damit entsteht eine höhere Komplexität und somit erschwerte Lesbarkeit
+		/ Verständlichkeit.
+	\end{alertblock}
+\end{frame}
+
+\begin{frame}
+\frametitle{Template zur Beschreibung}
+	\scriptsize
+	\begin{table}[]
+		\begin{tabular}{l|l}
+		 Use Case 				  & Name des Use Case\\
+		 Zusammenfassung 		& Kurzbeschreibung\\
+		 Akteure 				    & Akteure die den Use Case auslösen oder involviert sind\\
+		 Vorbedingungen 		& Vorraussetzungen die zur Ausführung erfüllt sein müssen\\
+		 Ablaufbeschreibung & Strukturierte Ablaufbeschreibung (alle Standardfälle)\\
+		 Verwendung 				& Auflistung aller Include-Beziehungen\\
+		 Erweiterung 				& Auflistung aller Extend-Beziehungen\\
+		 Alternativen 			& Optionen und Alternative Ausführungen\\
+		 Nachbedingungen 	  & Resultate die der Use Case liefert\\
+		 Fehlschlag 				& Erwarteter Zustand wenn das Ziel nicht erreicht wird\\
+		 Sonstiges 				  & Nutzen des Use Case; Probleme die der Use Case löst\\
+		\end{tabular}
+	\end{table}
+\end{frame}
+
+\begin{frame}
+\frametitle{Übung 4.1}
+	Untersuchen Sie dieses Use Case Diagramm auf Fehler. Berichtigen Sie das Diagramm derart,
+	dass es einen korrekten Sachverhalt wiedergibt.
+	\bigskip
+	\center
+	\includegraphics[width=0.7\textwidth,
+	keepaspectratio=true]{bilder/use_case_aufg1.png}
+\end{frame}
+
+\ifloesung
+\begin{frame}
+\frametitle{Übung 4.1 - Lösung}
+	\includegraphics[width=1\textwidth,
+	keepaspectratio=true]{bilder/use_case_aufg1_lsg.png}
+\end{frame}
+\fi
+
+\begin{frame}
+\frametitle{Übung 4.2}
+	Erstellen Sie ein Use Case Diagramm für das Anrufen (das herkömmliche Telefongespräch zwischen 2 Personen).
+	Berücksichtigen Sie dabei die Möglichkeit einer Konferenzschaltung (Hinzufügen eines weiteren Gesprächspartners
+	zum bestehenden Telefongespräch).
+
+	Beschreiben Sie die einzelnen Use Cases aus Ihrem Diagramm. Dazu verwenden Sie das in der Vorlesung vorgestellte
+	Template.
+\end{frame}
+
+\ifloesung
+\begin{frame}
+\frametitle{Übung 4.2 - Lösung}
+	\includegraphics[width=1\textwidth,
+	keepaspectratio=true]{bilder/use_case_aufg2_lsg.png}
+	(Das Use Case Diagramm lässt sich beliebig erweitern)
+\end{frame}
+\fi
+
+\begin{frame}
+\frametitle{Übung 4.3}
+	Beschreiben Sie die Benutzung eines Bankautomaten mit dem Ziel Geld abzuheben in Form
+	eines Use Cases. Beachten Sie dabei, dass Use Cases nur Abläufe / Schritte enthalten,
+	die nach außen sichtbar sind; sie enthalten keine internen Strukturen.
+
+	Beschreiben Sie die einzelnen Use Cases aus Ihrem Diagramm. Dazu verwenden Sie das in der Vorlesung vorgestellte
+	Template.
+\end{frame}
+
+\ifloesung
+\begin{frame}
+\frametitle{Übung 4.3 - Lösung}
+	\includegraphics[width=1\textwidth,
+	keepaspectratio=true]{bilder/use_case_aufg3_lsg.png}
+\end{frame}
+\fi
+
+\begin{frame}
+\frametitle{Übung 4.4}
+	Beschreiben Sie die Verwaltung einer Bibliothek bei der Buchausleihe in Form
+	eines Use Cases.
+
+	Beschreiben Sie die einzelnen Use Cases aus Ihrem Diagramm. Dazu verwenden Sie das in der Vorlesung vorgestellte
+	Template.
+\end{frame}
+
+\ifloesung
+\begin{frame}
+\frametitle{Übung 4.4 - Lösung}
+	\includegraphics[width=0.7\textwidth,
+	keepaspectratio=true]{bilder/use_case_aufg4_lsg.png}
+\end{frame}
+\fi
+
+\begin{frame}
+\frametitle{Use Cases}
+	Vorteile
+	\begin{itemize}
+		\item Leichter Zugang zum System
+		\item Besseres Verständnis des Systems (Abgrenzug innerhalb und außerhalb des Systems)
+		\item Basis für Klassendefinition
+		\item Erleichtert Kommunikation zwischen Entwickler und Anwender
+		\item Basis für System- und Abnahmetests
+		\item Grundlage für Benutzerdokumentation
+	\end{itemize}
+	\bigskip
+	Nachteile
+	\begin{itemize}
+		\item Gefahr der funktionalen Zerlegung (zu viel kleine Use Cases)
+		\item Kontrollstrukturen lassen sich nicht einfach darstellen (nur in Beschreibung)
+		\item User Interface / User Experience lässt sich nicht abbilden
+	\end{itemize}
+\end{frame}

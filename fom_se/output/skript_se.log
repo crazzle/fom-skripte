@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2017.2.27)  5 MAY 2017 23:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2017.2.27)  20 MAY 2017 10:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2880,6 +2880,194 @@ Package pdftex.def Info: FOMLogo.pdf used on input line 265.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
  [219
 
+] <bilder/akteur.png, id=4162, 73.27374pt x 97.36375pt>
+File: bilder/akteur.png Graphic file (type png)
+ <use bilder/akteur.png>
+Package pdftex.def Info: bilder/akteur.png used on input line 288.
+(pdftex.def)             Requested size: 44.11746pt x 58.62073pt.
+File: FOMLogo.pdf Graphic file (type pdf)
+ <use FOMLogo.pdf>
+Package pdftex.def Info: FOMLogo.pdf used on input line 288.
+(pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
+ [220
+
+ <./bilder/akteur.png>] <bilder/use_case.png, id=4182, 159.59625pt x 97.36375pt>
+File: bilder/use_case.png Graphic file (type png)
+ <use bilder/use_case.png>
+Package pdftex.def Info: bilder/use_case.png used on input line 305.
+(pdftex.def)             Requested size: 66.17789pt x 40.3725pt.
+File: FOMLogo.pdf Graphic file (type pdf)
+ <use FOMLogo.pdf>
+Package pdftex.def Info: FOMLogo.pdf used on input line 305.
+(pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
+ [221
+
+ <./bilder/use_case.png>] <bilder/interaktionsbeziehung.png, id=4203, 286.06876pt x 111.41624pt>
+File: bilder/interaktionsbeziehung.png Graphic file (type png)
+ <use bilder/interaktionsbeziehung.png>
+Package pdftex.def Info: bilder/interaktionsbeziehung.png used on input line 321.
+(pdftex.def)             Requested size: 115.81256pt x 45.10632pt.
+File: FOMLogo.pdf Graphic file (type pdf)
+ <use FOMLogo.pdf>
+Package pdftex.def Info: FOMLogo.pdf used on input line 321.
+(pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
+ [222
+
+ <./bilder/interaktionsbeziehung.png>] <bilder/include.png, id=4223, 559.08875pt x 360.34625pt>
+File: bilder/include.png Graphic file (type png)
+ <use bilder/include.png>
+Package pdftex.def Info: bilder/include.png used on input line 343.
+(pdftex.def)             Requested size: 165.44725pt x 106.63112pt.
+File: FOMLogo.pdf Graphic file (type pdf)
+ <use FOMLogo.pdf>
+Package pdftex.def Info: FOMLogo.pdf used on input line 343.
+(pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
+ [223
+
+ <./bilder/include.png>] <bilder/extend.png, id=4244, 538.01pt x 473.77pt>
+File: bilder/extend.png Graphic file (type png)
+ <use bilder/extend.png>
+Package pdftex.def Info: bilder/extend.png used on input line 364.
+(pdftex.def)             Requested size: 165.44725pt x 145.68883pt.
+File: FOMLogo.pdf Graphic file (type pdf)
+ <use FOMLogo.pdf>
+Package pdftex.def Info: FOMLogo.pdf used on input line 364.
+(pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
+ [224
+
+ <./bilder/extend.png>] <bilder/generalisierung_use_case.png, id=4264, 634.37pt x 516.93124pt>
+File: bilder/generalisierung_use_case.png Graphic file (type png)
+ <use bilder/generalisierung_use_case.png>
+Package pdftex.def Info: bilder/generalisierung_use_case.png used on input line 385.
+(pdftex.def)             Requested size: 179.23102pt x 146.04912pt.
+File: FOMLogo.pdf Graphic file (type pdf)
+ <use FOMLogo.pdf>
+Package pdftex.def Info: FOMLogo.pdf used on input line 385.
+(pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
+ [225
+
+ <./bilder/generalisierung_use_case.png>] <bilder/generalisierung_akteur.png, id=4284, 723.70375pt x 532.99126pt>
+File: bilder/generalisierung_akteur.png Graphic file (type png)
+ <use bilder/generalisierung_akteur.png>
+Package pdftex.def Info: bilder/generalisierung_akteur.png used on input line 404.
+(pdftex.def)             Requested size: 179.23102pt x 131.99504pt.
+File: FOMLogo.pdf Graphic file (type pdf)
+
+<use FOMLogo.pdf>
+Package pdftex.def Info: FOMLogo.pdf used on input line 404.
+(pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
+ [226
+
+ <./bilder/generalisierung_akteur.png>]
+File: FOMLogo.pdf Graphic file (type pdf)
+ <use FOMLogo.pdf>
+Package pdftex.def Info: FOMLogo.pdf used on input line 414.
+(pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
+ [227
+
+]
+Overfull \hbox (18.60825pt too wide) in paragraph at lines 434--434
+ [] 
+ []
+
+File: FOMLogo.pdf Graphic file (type pdf)
+<use FOMLogo.pdf>
+Package pdftex.def Info: FOMLogo.pdf used on input line 434.
+(pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
+ [228
+
+] <bilder/use_case_aufg1.png, id=4341, 420.57124pt x 366.36874pt>
+File: bilder/use_case_aufg1.png Graphic file (type png)
+ <use bilder/use_case_aufg1.png>
+Package pdftex.def Info: bilder/use_case_aufg1.png used on input line 444.
+(pdftex.def)             Requested size: 193.019pt x 168.14594pt.
+File: FOMLogo.pdf Graphic file (type pdf)
+ <use FOMLogo.pdf>
+Package pdftex.def Info: FOMLogo.pdf used on input line 444.
+(pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
+ [229
+
+ <./bilder/use_case_aufg1.png>] <bilder/use_case_aufg1_lsg.png, id=4362, 604.2575pt x 466.74374pt>
+File: bilder/use_case_aufg1_lsg.png Graphic file (type png)
+ <use bilder/use_case_aufg1_lsg.png>
+Package pdftex.def Info: bilder/use_case_aufg1_lsg.png used on input line 451.
+(pdftex.def)             Requested size: 275.74263pt x 212.98834pt.
+File: FOMLogo.pdf Graphic file (type pdf)
+ <use FOMLogo.pdf>
+Package pdftex.def Info: FOMLogo.pdf used on input line 451.
+(pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
+ [230
+
+ <./bilder/use_case_aufg1_lsg.png>]
+File: FOMLogo.pdf Graphic file (type pdf)
+ <use FOMLogo.pdf>
+Package pdftex.def Info: FOMLogo.pdf used on input line 462.
+(pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
+ [231
+
+] <bilder/use_case_aufg2_lsg.png, id=4400, 570.13pt x 369.38pt>
+File: bilder/use_case_aufg2_lsg.png Graphic file (type png)
+ <use bilder/use_case_aufg2_lsg.png>
+Package pdftex.def Info: bilder/use_case_aufg2_lsg.png used on input line 470.
+(pdftex.def)             Requested size: 275.74263pt x 178.64745pt.
+
+Overfull \hbox (21.62631pt too wide) in paragraph at lines 470--470
+[][]\OT1/cmss/m/n/10.95 (Das 
+ []
+
+File: FOMLogo.pdf Graphic file (type pdf)
+<use FOMLogo.pdf>
+Package pdftex.def Info: FOMLogo.pdf used on input line 470.
+(pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
+ [232
+
+ <./bilder/use_case_aufg2_lsg.png>]
+File: FOMLogo.pdf Graphic file (type pdf)
+ <use FOMLogo.pdf>
+Package pdftex.def Info: FOMLogo.pdf used on input line 481.
+(pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
+ [233
+
+] <bilder/use_case_aufg3_lsg.png, id=4439, 513.92pt x 443.6575pt>
+File: bilder/use_case_aufg3_lsg.png Graphic file (type png)
+ <use bilder/use_case_aufg3_lsg.png>
+Package pdftex.def Info: bilder/use_case_aufg3_lsg.png used on input line 488.
+(pdftex.def)             Requested size: 275.74263pt x 238.0483pt.
+
+Overfull \vbox (5.63918pt too high) detected at line 488
+ []
+
+File: FOMLogo.pdf Graphic file (type pdf)
+<use FOMLogo.pdf>
+Package pdftex.def Info: FOMLogo.pdf used on input line 488.
+(pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
+ [234
+
+ <./bilder/use_case_aufg3_lsg.png>]
+File: FOMLogo.pdf Graphic file (type pdf)
+ <use FOMLogo.pdf>
+Package pdftex.def Info: FOMLogo.pdf used on input line 498.
+(pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
+ [235
+
+] <bilder/use_case_aufg4_lsg.png, id=4478, 468.75125pt x 480.79625pt>
+File: bilder/use_case_aufg4_lsg.png Graphic file (type png)
+ <use bilder/use_case_aufg4_lsg.png>
+Package pdftex.def Info: bilder/use_case_aufg4_lsg.png used on input line 505.
+(pdftex.def)             Requested size: 193.019pt x 197.97874pt.
+File: FOMLogo.pdf Graphic file (type pdf)
+ <use FOMLogo.pdf>
+Package pdftex.def Info: FOMLogo.pdf used on input line 505.
+(pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
+ [236
+
+ <./bilder/use_case_aufg4_lsg.png>]
+File: FOMLogo.pdf Graphic file (type pdf)
+ <use FOMLogo.pdf>
+Package pdftex.def Info: FOMLogo.pdf used on input line 526.
+(pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
+ [237
+
 ])
 \tf@nav=\write6
 \openout6 = `skript_se.nav'.
@@ -2890,11 +3078,11 @@ Package pdftex.def Info: FOMLogo.pdf used on input line 265.
 \tf@snm=\write8
 \openout8 = `skript_se.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 26.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 26.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 22.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 22.
  (./output/skript_se.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 26.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 26.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 22.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 22.
 Package rerunfilecheck Info: File `skript_se.out' has not changed.
 (rerunfilecheck)             Checksum: 602334605A3C0BF143B52534B7C0B765;737.
 
@@ -2905,21 +3093,21 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 26.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 22.
  ) 
 Here is how much of TeX's memory you used:
- 20075 strings out of 493027
- 371101 string characters out of 6134069
+ 20214 strings out of 493027
+ 373644 string characters out of 6134069
  450074 words of memory out of 5000000
- 22616 multiletter control sequences out of 15000+600000
+ 22708 multiletter control sequences out of 15000+600000
  15159 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,21n,66p,432b,822s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb>
-Output written on ./output/skript_se.pdf (219 pages, 7226668 bytes).
+Output written on ./output/skript_se.pdf (237 pages, 7901823 bytes).
 PDF statistics:
- 4288 PDF objects out of 4296 (max. 8388607)
- 3946 compressed objects within 40 object streams
- 451 named destinations out of 1000 (max. 500000)
- 314 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4649 PDF objects out of 5155 (max. 8388607)
+ 4262 compressed objects within 43 object streams
+ 487 named destinations out of 1000 (max. 500000)
+ 374 words of extra memory for PDF output out of 10000 (max. 10000000)
 
