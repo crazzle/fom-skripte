@@ -524,3 +524,231 @@
 		\item User Interface / User Experience lässt sich nicht abbilden
 	\end{itemize}
 \end{frame}
+
+\subsection{Klassendiagramme}
+\begin{frame}
+\frametitle{Notation Klassen}
+\begin{columns}
+	\begin{column}{.35\textwidth}
+		\scriptsize
+		\begin{itemize}
+			\item Als Rechteck dargestellt
+			\item In beliebig viele Compartments unterteilt
+			\item Inhalt der Compartments frei wählbar
+			\item Verschiedene Sichten durch Verzicht auf Compartments möglich
+		\end{itemize}
+		\normalsize
+	\end{column}
+	\begin{column}{.65\textwidth}
+		Konvention:
+		\center
+		\includegraphics[width=0.7\textwidth,
+		keepaspectratio=true]{bilder/klasse_notation.png}
+	\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Attribute}
+	\begin{block}{Syntax}
+		Sichtbarkeit / Name : Typ Multiplizität = Anfangswert \{Einschränkungen\}
+		\\
+		(Mit Ausnahme des Namens sind alle Angaben optional)
+	\end{block}
+	\begin{itemize}
+		\item Beschreiben Eigenschaften einer Klasse
+		\item Zeigen Daten die von Objekten angenommen werden können
+		\item Jedes Attribut hat einen Namen (Substantiv, bsp. Farbe, Preis)
+	  \item Notation Klassenattribut: \uline{Klassenattribut}
+		\item Abgeleitetes Attribut wird aus anderen Attributswerten berechnet, Notation: /Attribut
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Sichtbarkeit Attribute}
+	\begin{itemize}
+		\item public: +
+		\item private: -
+		\item package: $\sim$
+		\item protected: \#
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Multiplizität Attribute}
+	Die Multiplizität legt die Unter- und Obergrenze der Anzahl der unter einem Attributsnamen
+	abglegbaren Instanzen fest.\\
+	\begin{itemize}
+		\item 0..1 optionales Attribut (höchstens ein Wert)
+		\item 1..1 zwingend, genau ein Wert
+		\item 0..* optional beliebig
+		\item 1..* mindestens einer, belieb viele
+		\item n..m mindestens n, höchstens m
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Eigenschaftswerte Attribute}
+	\begin{itemize}
+		\item readOnly: Attribute deren Wert nicht verändert werden darf (Konstanten)
+		\item ordered: Legt Reihenfolge der Inhalte eines Attributs fest
+		\item unique: Legt fest ob Attribut duplikatsfrei ist
+		\item In der UML Spezifikation sind weitere Eigenschaftswerte enthalten
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Beispiel Attribute}
+	Beispiel
+	\center
+	\includegraphics[width=0.5\textwidth,
+	keepaspectratio=true]{bilder/attribute_beispiel.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Übung 4.5}
+	Die Spezifikation ist fehlerhaft, identifizieren Sie die Fehler.
+	\center
+	\includegraphics[width=1\textwidth,
+	keepaspectratio=true]{bilder/klassend_aufg5.png}
+\end{frame}
+
+\ifloesung
+\begin{frame}
+\frametitle{Übung 4.5 - Lösung}
+	\center
+	\includegraphics[width=1\textwidth,
+	keepaspectratio=true]{bilder/klassend_aufg5_lsg.png}
+\end{frame}
+\fi
+
+\begin{frame}
+\frametitle{Operationen}
+	\begin{block}{Syntax}
+		Sichtbarkeit Name ( Parameter ) : Rückgabetyp \{Einschränkungen\}
+	\end{block}
+	\begin{itemize}
+		\item Ausführbare Tätigkeit im Sinne eines Algorithmus
+		\item Es muss darauf geachtet werden, welcher Klasse Operationen sinnvoll zugeordnet werden.\\
+		Klasse Auto sollte die Operation ``ausstattungHinzufügen'' zugeordnet haben und nicht die Klasse Ausstattung.
+		\item Notation Klassenoperation: \uline{operation()}, auch Konstruktoren
+		\item Parameter kann Richtung haben (in, out, inOut)
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Beispiel Operationen}
+	Beispiel
+	\begin{itemize}
+		\item +halloWelt()
+		\item +add(summand1, summand2):int
+		\item -div(divident:int, divisor:int):double
+		\item \#sub(in minuend:double, in subtrahend:double, out resultat:double)
+		\item inc(inOut wert)
+		\item setLstKl(lohnsteuerKlasse:int=1)
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Assoziationen}
+	\begin{block}{Definition}
+		Eine Assoziation drückt die Möglichkeit aus Instanzen einer Klasse mit Instanzen derselben oder
+		anderer Klassen zu verbinden.
+	\end{block}
+	\begin{itemize}
+		\item Bennenung ist optional, kurze prägnante Verben
+		\item Bezeichnung von Rollen der Klassen in einer Assoziation ist optional, Verwendung von Substantiven
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Beispiel Assoziation}
+	Beispiel
+	\center
+	\includegraphics[width=0.8\textwidth,
+	keepaspectratio=true]{bilder/assoziation.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Multiplizitäten Assoziation}
+	Beispiel
+	\center
+	\includegraphics[width=0.8\textwidth,
+	keepaspectratio=true]{bilder/asso_multi.png}
+	\bigskip
+	Eine Kann-Assoziation hat als Untergrenze die Multiplizität 0.\\
+	Eine Muss-Assoziation hat die Multiplizität größer 1 oder eine Untergrenze größer 1
+\end{frame}
+
+\begin{frame}
+\frametitle{Assoziative Klassen}
+	Eine Assoziation kann eine Klasse mit Attributen und Operationen darstellen
+	\center
+	\includegraphics[width=0.8\textwidth,
+	keepaspectratio=true]{bilder/asso_klasse.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Assoziative Klassen}
+	\center
+	\includegraphics[width=0.8\textwidth,
+	keepaspectratio=true]{bilder/asso_klasse_detail.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Reflexive Assoziation / Oder-Beziehung}
+	Eine reflexive Assoziation besteht zwischen Objekten derselben Klasse\\
+	\center
+	\includegraphics[width=0.6\textwidth,
+	keepaspectratio=true]{bilder/asso_reflexiv.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Navigierbarkeit}
+	Die folgende Assoziation definiert eine Beziehung ohne Angaben zu ihrer Navigierbarkeit\\
+	\center
+	\includegraphics[width=0.6\textwidth,
+	keepaspectratio=true]{bilder/asso_navi1.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Unidirektionale Navigierbarkeit}
+	Instanzen der Klasse Partyteilnehmer kennen Instanzen der Klasse
+	Partybegleitung. Die potenzielle Partybegleitung kennt jedoch nicht
+	den Partyteilnehmer.
+	\\
+	Die bidirektionale Navigierbarkeit weist entsprechend Pfeile an beiden
+	Assoziationsenden auf.
+	\\
+	\center
+	\includegraphics[width=0.6\textwidth,
+	keepaspectratio=true]{bilder/asso_navi2.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Aggregation und Komposition}
+	\begin{itemize}
+		\item Aggregation ist eine Teil-Ganzes-Beziehung, die sich durch ``besteht aus''
+		- für das Assoziationsende des Ganzen - und ``ist Teil von'' für das Ende der Teile
+		- beschreiben lässt.
+	\end{itemize}
+	\includegraphics[width=0.6\textwidth,
+	keepaspectratio=true]{bilder/asso_agg.png}
+	\begin{itemize}
+		\item Komposition ist eine starke Aggregation
+		\item Die Lebensdauer der Teile ist in diejenige des Ganzen eingebettet
+	\end{itemize}
+	\includegraphics[width=0.6\textwidth,
+	keepaspectratio=true]{bilder/asso_comp.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Vererbung}
+	Vererbung bedeutet, dass eine spezialisierte Klasse über die Eigenschaften,
+	das Verhalten und die Assoziationen einer oder mehrerer allgemeiner Klassen
+	verfügen kann.
+	\\
+	\center
+	\includegraphics[width=0.2\textwidth,
+	keepaspectratio=true]{bilder/asso_vererbung.png}
+\end{frame}
