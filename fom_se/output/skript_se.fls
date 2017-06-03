@@ -1117,6 +1117,8 @@ INPUT ./bilder/asso_vererbung.png
 INPUT ./bilder/asso_vererbung.png
 INPUT FOMLogo.pdf
 INPUT ./FOMLogo.pdf
+INPUT FOMLogo.pdf
+INPUT ./FOMLogo.pdf
 INPUT kapitel/exkurs.tex
 INPUT kapitel/exkurs.tex
 OUTPUT ./output/skript_se.vrb

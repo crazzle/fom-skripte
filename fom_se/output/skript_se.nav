@@ -536,35 +536,37 @@
 \headcommand {\beamer@framepages {256}{256}}
 \headcommand {\slideentry {5}{2}{20}{257/257}{Klassendiagramme}{0}}
 \headcommand {\beamer@framepages {257}{257}}
-\headcommand {\sectionentry {6}{Exkurs}{258}{Exkurs}{0}}
-\headcommand {\beamer@sectionpages {202}{257}}
-\headcommand {\beamer@subsectionpages {238}{257}}
-\headcommand {\slideentry {6}{0}{1}{258/258}{}{0}}
+\headcommand {\slideentry {5}{2}{21}{258/258}{Klassendiagramme}{0}}
 \headcommand {\beamer@framepages {258}{258}}
-\headcommand {\slideentry {6}{0}{2}{259/259}{}{0}}
+\headcommand {\sectionentry {6}{Exkurs}{259}{Exkurs}{0}}
+\headcommand {\beamer@sectionpages {202}{258}}
+\headcommand {\beamer@subsectionpages {238}{258}}
+\headcommand {\slideentry {6}{0}{1}{259/259}{}{0}}
 \headcommand {\beamer@framepages {259}{259}}
-\headcommand {\slideentry {6}{0}{3}{260/260}{}{0}}
+\headcommand {\slideentry {6}{0}{2}{260/260}{}{0}}
 \headcommand {\beamer@framepages {260}{260}}
-\headcommand {\beamer@subsectionentry {0}{6}{1}{261}{Continous Integration / Delivery mit Docker}}\headcommand {\beamer@subsectionpages {258}{260}}
-\headcommand {\slideentry {6}{1}{1}{261/261}{Continous Integration / Delivery mit Docker}{0}}
+\headcommand {\slideentry {6}{0}{3}{261/261}{}{0}}
 \headcommand {\beamer@framepages {261}{261}}
-\headcommand {\slideentry {6}{1}{2}{262/262}{Continous Integration / Delivery mit Docker}{0}}
+\headcommand {\beamer@subsectionentry {0}{6}{1}{262}{Continous Integration / Delivery mit Docker}}\headcommand {\beamer@subsectionpages {259}{261}}
+\headcommand {\slideentry {6}{1}{1}{262/262}{Continous Integration / Delivery mit Docker}{0}}
 \headcommand {\beamer@framepages {262}{262}}
-\headcommand {\beamer@subsectionentry {0}{6}{2}{263}{Data Science mit Apache Spark und Jupyter}}\headcommand {\beamer@subsectionpages {261}{262}}
-\headcommand {\slideentry {6}{2}{1}{263/263}{Data Science mit Apache Spark und Jupyter}{0}}
+\headcommand {\slideentry {6}{1}{2}{263/263}{Continous Integration / Delivery mit Docker}{0}}
 \headcommand {\beamer@framepages {263}{263}}
-\headcommand {\slideentry {6}{2}{2}{264/264}{Data Science mit Apache Spark und Jupyter}{0}}
+\headcommand {\beamer@subsectionentry {0}{6}{2}{264}{Data Science mit Apache Spark und Jupyter}}\headcommand {\beamer@subsectionpages {262}{263}}
+\headcommand {\slideentry {6}{2}{1}{264/264}{Data Science mit Apache Spark und Jupyter}{0}}
 \headcommand {\beamer@framepages {264}{264}}
-\headcommand {\slideentry {6}{2}{3}{265/265}{Data Science mit Apache Spark und Jupyter}{0}}
+\headcommand {\slideentry {6}{2}{2}{265/265}{Data Science mit Apache Spark und Jupyter}{0}}
 \headcommand {\beamer@framepages {265}{265}}
-\headcommand {\slideentry {6}{2}{4}{266/266}{Data Science mit Apache Spark und Jupyter}{0}}
+\headcommand {\slideentry {6}{2}{3}{266/266}{Data Science mit Apache Spark und Jupyter}{0}}
 \headcommand {\beamer@framepages {266}{266}}
-\headcommand {\slideentry {6}{2}{5}{267/267}{Data Science mit Apache Spark und Jupyter}{0}}
+\headcommand {\slideentry {6}{2}{4}{267/267}{Data Science mit Apache Spark und Jupyter}{0}}
 \headcommand {\beamer@framepages {267}{267}}
-\headcommand {\slideentry {6}{2}{6}{268/268}{Data Science mit Apache Spark und Jupyter}{0}}
+\headcommand {\slideentry {6}{2}{5}{268/268}{Data Science mit Apache Spark und Jupyter}{0}}
 \headcommand {\beamer@framepages {268}{268}}
-\headcommand {\beamer@partpages {1}{268}}
-\headcommand {\beamer@subsectionpages {263}{268}}
-\headcommand {\beamer@sectionpages {258}{268}}
-\headcommand {\beamer@documentpages {268}}
-\headcommand {\def \inserttotalframenumber {268}}
+\headcommand {\slideentry {6}{2}{6}{269/269}{Data Science mit Apache Spark und Jupyter}{0}}
+\headcommand {\beamer@framepages {269}{269}}
+\headcommand {\beamer@partpages {1}{269}}
+\headcommand {\beamer@subsectionpages {264}{269}}
+\headcommand {\beamer@sectionpages {259}{269}}
+\headcommand {\beamer@documentpages {269}}
+\headcommand {\def \inserttotalframenumber {269}}

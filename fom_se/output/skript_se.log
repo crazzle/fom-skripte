@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2017.2.27)  3 JUN 2017 00:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2017.2.27)  3 JUN 2017 08:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3286,7 +3286,14 @@ Package pdftex.def Info: FOMLogo.pdf used on input line 754.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
  [257
 
- <./bilder/asso_vererbung.png>]) (./kapitel/exkurs.tex
+ <./bilder/asso_vererbung.png>]
+File: FOMLogo.pdf Graphic file (type pdf)
+ <use FOMLogo.pdf>
+Package pdftex.def Info: FOMLogo.pdf used on input line 769.
+(pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
+ [258
+
+]) (./kapitel/exkurs.tex
 \openout4 = `skript_se.vrb'.
 
  (./output/skript_se.vrb)
@@ -3294,30 +3301,30 @@ File: FOMLogo.pdf Graphic file (type pdf)
  <use FOMLogo.pdf>
 Package pdftex.def Info: FOMLogo.pdf used on input line 5.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
- [258
+ [259
 
 ]
 File: FOMLogo.pdf Graphic file (type pdf)
  <use FOMLogo.pdf>
 Package pdftex.def Info: FOMLogo.pdf used on input line 14.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
- [259
+ [260
 
 ]
 File: FOMLogo.pdf Graphic file (type pdf)
  <use FOMLogo.pdf>
 Package pdftex.def Info: FOMLogo.pdf used on input line 27.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
- [260
+ [261
 
 ]
 File: FOMLogo.pdf Graphic file (type pdf)
  <use FOMLogo.pdf>
 Package pdftex.def Info: FOMLogo.pdf used on input line 34.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
- [261
+ [262
 
-] <bilder/ci_cd_process.png, id=6058, 907.39pt x 617.30624pt>
+] <bilder/ci_cd_process.png, id=6080, 907.39pt x 617.30624pt>
 File: bilder/ci_cd_process.png Graphic file (type png)
  <use bilder/ci_cd_process.png>
 Package pdftex.def Info: bilder/ci_cd_process.png used on input line 41.
@@ -3326,16 +3333,16 @@ File: FOMLogo.pdf Graphic file (type pdf)
  <use FOMLogo.pdf>
 Package pdftex.def Info: FOMLogo.pdf used on input line 41.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
- [262
+ [263
 
  <./bilder/ci_cd_process.png>]
 File: FOMLogo.pdf Graphic file (type pdf)
  <use FOMLogo.pdf>
 Package pdftex.def Info: FOMLogo.pdf used on input line 48.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
- [263
+ [264
 
-] <bilder/data_science_blank.png, id=6103, 686.565pt x 631.35875pt>
+] <bilder/data_science_blank.png, id=6126, 686.565pt x 631.35875pt>
 File: bilder/data_science_blank.png Graphic file (type png)
  <use bilder/data_science_blank.png>
 Package pdftex.def Info: bilder/data_science_blank.png used on input line 55.
@@ -3348,9 +3355,9 @@ File: FOMLogo.pdf Graphic file (type pdf)
 <use FOMLogo.pdf>
 Package pdftex.def Info: FOMLogo.pdf used on input line 55.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
- [264
+ [265
 
- <./bilder/data_science_blank.png>] <bilder/data_science_sim.png, id=6128, 1118.1775pt x 662.475pt>
+ <./bilder/data_science_blank.png>] <bilder/data_science_sim.png, id=6151, 1118.1775pt x 662.475pt>
 File: bilder/data_science_sim.png Graphic file (type png)
  <use bilder/data_science_sim.png>
 Package pdftex.def Info: bilder/data_science_sim.png used on input line 62.
@@ -3359,9 +3366,9 @@ File: FOMLogo.pdf Graphic file (type pdf)
  <use FOMLogo.pdf>
 Package pdftex.def Info: FOMLogo.pdf used on input line 62.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
- [265
+ [266
 
- <./bilder/data_science_sim.png>] <bilder/data_science_kafka.png, id=6153, 1060.96375pt x 652.4375pt>
+ <./bilder/data_science_sim.png>] <bilder/data_science_kafka.png, id=6175, 1060.96375pt x 652.4375pt>
 File: bilder/data_science_kafka.png Graphic file (type png)
  <use bilder/data_science_kafka.png>
 Package pdftex.def Info: bilder/data_science_kafka.png used on input line 69.
@@ -3370,9 +3377,9 @@ File: FOMLogo.pdf Graphic file (type pdf)
  <use FOMLogo.pdf>
 Package pdftex.def Info: FOMLogo.pdf used on input line 69.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
- [266
+ [267
 
- <./bilder/data_science_kafka.png>] <bilder/data_science_spark.png, id=6177, 1077.02374pt x 666.49pt>
+ <./bilder/data_science_kafka.png>] <bilder/data_science_spark.png, id=6199, 1077.02374pt x 666.49pt>
 File: bilder/data_science_spark.png Graphic file (type png)
  <use bilder/data_science_spark.png>
 Package pdftex.def Info: bilder/data_science_spark.png used on input line 76.
@@ -3381,9 +3388,9 @@ File: FOMLogo.pdf Graphic file (type pdf)
  <use FOMLogo.pdf>
 Package pdftex.def Info: FOMLogo.pdf used on input line 76.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
- [267
+ [268
 
- <./bilder/data_science_spark.png>] <bilder/data_science_all.png, id=6201, 1488.56125pt x 647.41875pt>
+ <./bilder/data_science_spark.png>] <bilder/data_science_all.png, id=6223, 1488.56125pt x 647.41875pt>
 File: bilder/data_science_all.png Graphic file (type png)
  <use bilder/data_science_all.png>
 Package pdftex.def Info: bilder/data_science_all.png used on input line 83.
@@ -3392,7 +3399,7 @@ File: FOMLogo.pdf Graphic file (type pdf)
  <use FOMLogo.pdf>
 Package pdftex.def Info: FOMLogo.pdf used on input line 83.
 (pdftex.def)             Requested size: 24.94354pt x 24.94354pt.
- [268
+ [269
 
  <./bilder/data_science_all.png>])
 \tf@nav=\write6
@@ -3410,7 +3417,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 24.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 24.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 24.
 Package rerunfilecheck Info: File `skript_se.out' has not changed.
-(rerunfilecheck)             Checksum: AF519D8FA27D178DAD0DA337D424C570;1035.
+(rerunfilecheck)             Checksum: 6929881A0A845FED02C08BE423E33671;1035.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -3422,18 +3429,18 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 24.
  ) 
 Here is how much of TeX's memory you used:
- 20573 strings out of 493027
- 379299 string characters out of 6134069
- 451950 words of memory out of 5000000
- 22969 multiletter control sequences out of 15000+600000
+ 20577 strings out of 493027
+ 379338 string characters out of 6134069
+ 451951 words of memory out of 5000000
+ 22971 multiletter control sequences out of 15000+600000
  15265 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,21n,66p,432b,822s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on ./output/skript_se.pdf (268 pages, 8963602 bytes).
+Output written on ./output/skript_se.pdf (269 pages, 8974731 bytes).
 PDF statistics:
- 6375 PDF objects out of 7423 (max. 8388607)
- 5900 compressed objects within 59 object streams
- 553 named destinations out of 1000 (max. 500000)
+ 6398 PDF objects out of 7423 (max. 8388607)
+ 5921 compressed objects within 60 object streams
+ 555 named destinations out of 1000 (max. 500000)
  506 words of extra memory for PDF output out of 10000 (max. 10000000)
 
