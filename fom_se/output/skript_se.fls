@@ -1119,6 +1119,11 @@ INPUT FOMLogo.pdf
 INPUT ./FOMLogo.pdf
 INPUT FOMLogo.pdf
 INPUT ./FOMLogo.pdf
+INPUT bilder/klassend_aufg6_lsg.png
+INPUT ./bilder/klassend_aufg6_lsg.png
+INPUT ./bilder/klassend_aufg6_lsg.png
+INPUT FOMLogo.pdf
+INPUT ./FOMLogo.pdf
 INPUT kapitel/exkurs.tex
 INPUT kapitel/exkurs.tex
 OUTPUT ./output/skript_se.vrb

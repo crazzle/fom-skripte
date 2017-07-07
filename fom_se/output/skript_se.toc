@@ -12,6 +12,6 @@
 \beamer@sectionintoc {5}{Requirements Engineering}{202}{0}{5}
 \beamer@subsectionintoc {5}{1}{Use Cases}{215}{0}{5}
 \beamer@subsectionintoc {5}{2}{Klassendiagramme}{238}{0}{5}
-\beamer@sectionintoc {6}{Exkurs}{259}{0}{6}
-\beamer@subsectionintoc {6}{1}{Continous Integration / Delivery mit Docker}{262}{0}{6}
-\beamer@subsectionintoc {6}{2}{Data Science mit Apache Spark und Jupyter}{264}{0}{6}
+\beamer@sectionintoc {6}{Exkurs}{260}{0}{6}
+\beamer@subsectionintoc {6}{1}{Continous Integration / Delivery mit Docker}{263}{0}{6}
+\beamer@subsectionintoc {6}{2}{Data Science mit Apache Spark und Jupyter}{265}{0}{6}
